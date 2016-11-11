@@ -13,9 +13,23 @@ __author__ = "Jan Hajic jr."
 
 
 class DocumentBase:
+    zones = []
+
     def __init__(self, fname):
         """Read the Document."""
         raise NotImplementedError('DocumentBase should not be instantiated directly!')
+
+    def tokens(self, zones=None, **vtext_to_stream_kwargs):
+        """This is the basic interface for iterating over tokens.
+        The ``field`` kwarg is important.
+        """
+        if zones is None:
+            zones = self.zones
+
+        for zone in zones:
+            vtext = getattr(self, zone)
+            for token in vtext.to_token_stream(**vtext_to_stream_kwargs):
+                yield token
 
     @staticmethod
     def load_xmldoc(fname):
@@ -82,7 +96,32 @@ class Document(DocumentBase):
     >>> len(d.text.sentences)
     17
 
+    You can also iterate over the document's tokens, possibly with specifying
+    which zones to iterate over.
+
+    >>> for i, t in enumerate(d.tokens()):
+    ...     if i >= 3: break
+    ...     print(t)
+    304
+    miliony
+    lidí
+
+    You can also supply kwargs for iterating
+    over each zone like you would pass them to :meth:`VText.to_token_stream`.
+    Note, however, that the start and end arguments will be applied to each
+    zone as well, so this will return 4 lemmas:
+
+    >>> for t in d.tokens(zones=['text'], start=0, end=4, field='lemma'):
+    ...     print(t)
+    příchod
+    nový
+    evropský
+    měna
+
+    The ``tokens()`` method is a generator.
+
     """
+    zones = ['title', 'text']
 
     def __init__(self, fname):
         """Read the Document."""

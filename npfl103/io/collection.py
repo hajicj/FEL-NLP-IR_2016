@@ -9,11 +9,11 @@ __version__ = "0.0.1"
 __author__ = "Jan Hajic jr."
 
 
-class Corpus:
+class Collection:
     """This class represents the entire collection of documents
     in the assignment.
 
-    The Corpus is initialized with the ``document.list`` file that
+    The Collection is initialized with the ``document.list`` file that
     contains paths to the individual documents. It is assumed the
     paths in the document list file are relative to the location of
     that file -- if not, you can use the ``docpath`` parameter
@@ -21,14 +21,14 @@ class Corpus:
     (For instance, if you have absolute paths in ``documents.list``,
     you would use ``docpath=''``.)
 
-    >>> corpus = Corpus('../test_data/test-documents.list')
+    >>> corpus = Collection('../test_data/test-documents.list')
     >>> len(corpus)
     1
     >>> print(corpus[0].text.to_text(sentence_idxs=[1, 3]))
     leden provázely v celé Evropě bouřlivé oslavy a ohňostroje .
     " Nevypadají jako opravdové .
 
-    The Corpus supports iteration over documents:
+    The Collection supports iteration over documents:
 
     >>> for doc in corpus:
     ...     print(len(doc.text))
@@ -38,9 +38,9 @@ class Corpus:
     and cached.
 
     You can supply any class that takes a filename as an initialization
-    argument. For instance, the Topics can also be loaded as a Corpus:
+    argument. For instance, the Topics can also be loaded as a Collection:
 
-    >>> tcorpus = Corpus('../test_data/test-topics.list', document_cls=Topic)
+    >>> tcorpus = Collection('../test_data/test-topics.list', document_cls=Topic)
     >>> len(tcorpus)
     1
     >>> for topic in tcorpus:
@@ -107,9 +107,9 @@ class Corpus:
 
         if not self._cache_disabled:
             self._cache[index] = document
+
         return document
 
     @property
     def _loaded_idxs(self):
         return self._cache.keys()
-

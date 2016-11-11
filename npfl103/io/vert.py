@@ -212,6 +212,23 @@ class VText:
     >>> vt.tokens[10].tag
     'Z:-------------'
 
+    Iterating over the VTokens
+    --------------------------
+
+    To iterate over the full VToken objects, just use
+
+    >>> for i, t in enumerate(vt):
+    ...     if i > 4: break
+    ...     print(t.form)
+    leden
+    provázely
+    v
+    celé
+    Evropě
+
+    Exporting
+    ---------
+
     You can also export the text of the document.
 
     >>> print(vt.to_text())
@@ -229,13 +246,16 @@ class VText:
     >>> print(vt.to_text(sentence_idxs=[1]))
     " Nevypadají jako opravdové .
 
+    Iterating over a stream of simple tokens
+    ----------------------------------------
+
     To iterate over the tokens instead of aggregating them all
     this way, use ``to_text_stream()``. This currently only supports
     iterating over tokens, not sentences, and will not mark sentence
     ends. However, you can at least specify a start token and
     an end token.
 
-    >>> for w in vt.to_text_stream(0, 4):
+    >>> for w in vt.to_token_stream(0, 4):
     ...     print(w)
     leden
     provázely
@@ -245,7 +265,45 @@ class VText:
     The ``to_text_stream()`` method is especially useful for iterating
     over an entire corpus without hogging memory.
 
+    Token filters
+    ^^^^^^^^^^^^^
+
+    You can also filter the tokens based on their properties. Because
+    the filter has the entire :class:`VToken` at its disposal, it can
+    access other fields than the one that is being returned: for instance,
+    it can output forms filtered by part-of-speech tags. If we only want
+    nouns:
+
+    >>> for w in vt.to_token_stream(token_filter=lambda t: t.pos in ['N']):
+    ...     print(w)
+    leden
+    Evropě
+    oslavy
+    ohňostroje
+
+    A token filter can be any callable -- we can for instance define a silly
+    filter that only lets pass one word from each part of speech.
+
+    >>> class UniqueTokenFilter:
+    ...     def __init__(self): self._passed = {}
+    ...     def __call__(self, vtoken):
+    ...         if vtoken.pos in self._passed:
+    ...             return False
+    ...         self._passed[vtoken.pos] = True
+    ...         return True
+    >>> tf = UniqueTokenFilter()
+    >>> for w in vt.to_token_stream(token_filter=tf):
+    ...     print(w)
+    leden
+    provázely
+    v
+    celé
+    a
+    .
+
+
     """
+
     def __init__(self, stream_or_string):
 
         if isinstance(stream_or_string, str):
@@ -307,24 +365,47 @@ class VText:
     def __iter__(self):
         return (t for t in self.tokens)
 
-    def to_text(self, sentence_idxs=None, field='form', as_sentences=True):
+    def __pass_all_filter(self, token):
+        """The default token filter, which lets everything through."""
+        return True
+
+    def to_text(self, sentence_idxs=None, field='form', as_sentences=True,
+                token_filter=None):
         """Formats the VText as a string with one sentence per line.
         Gets the corresponding field from the VText's VTokens as tokens
         of the output text. If you don't want to split the text into
         lines, set ``sentences=False``.
+
+        :param filter_fn: Something callable that takes a VToken
+            as an argument and returns True if the token should be
+            part of the text, False if it shouldn't. The filter
+            can be a function, or it can be a class that implements
+            ``__call__``.
+
         """
+        if token_filter is None:
+            token_filter = self.__pass_all_filter
+
         if sentence_idxs is None:
             sentence_idxs = frozenset([i for i in range(len(self.sentences))])
 
         if as_sentences:
-            output_lines = [' '.join([getattr(t, field) for t in s])
+            output_lines = [' '.join([getattr(t, field) for t in s
+                                      if token_filter(t)])
                             for i, s in enumerate(self.sentences)
                             if i in sentence_idxs]
             return '\n'.join(output_lines)
         else:
-            return ' '.join([getattr(t, field) for t in self.tokens])
+            return ' '.join([getattr(t, field) for t in self.tokens
+                             if token_filter(t)])
 
-    def to_text_stream(self, start=None, end=None, field='form'):
+    def to_token_stream(self, start=None, end=None, field='form',
+                        token_filter=None):
+        """Trick: use ``field='self'`` to return a stream of the VToken
+        objects."""
+        if token_filter is None:
+            token_filter = self.__pass_all_filter
+
         if start is None:
             start = 0
         if end is None:
@@ -335,4 +416,5 @@ class VText:
                 continue
             if i >= end:
                 break
-            yield getattr(token, field)
+            if token_filter(token):
+                yield getattr(token, field)
