@@ -123,7 +123,7 @@ class TransformCorpus(object):
     the corpus of Documents to sparse vectors, the TransformCorpus
     object deals with pipelining operations in the vector space.
     It's more of a clarity/comprehensibility thing. Of course,
-    if you demand a TransformedCorpus to apply the vectorizer, it's quite
+    if you want a TransformedCorpus to apply the vectorizer, it's quite
     straightforward:
 
     >>> vectorizer = TermFrequencyVectorizer(field='lemma', token_filter=tf)
@@ -147,7 +147,10 @@ class TransformCorpus(object):
      ('zpráva', 0.015037593984962405),
      ('unie', 0.015037593984962405)]
 
-
+    This does have one advantage: the iteration is repeatable. A simple
+    generator expression like the one we used for vectorization is
+    a fire-and-forget operation. Using the TransformCorpus enables repeated
+    iteration with the nicely small generator memory footprint.
     """
     def __init__(self, corpus, transform, name):
         """Initialize MyClass."""
