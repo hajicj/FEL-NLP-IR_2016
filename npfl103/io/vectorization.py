@@ -1,5 +1,9 @@
 """This module implements a class that..."""
 from __future__ import print_function, unicode_literals
+
+import collections
+import pprint
+
 from npfl103.io.document import Document
 
 __version__ = "0.0.1"
@@ -22,10 +26,19 @@ class DocumentVectorizer:
 
     >>> doc = Document('../test_data/LN-20020102001.vert')
     >>> tf = lambda t: t.pos == 'N'
-    >>> vectorizer = DocumentVectorizer(zones=['title'], field='form', token_filter=tf)
+    >>> vectorizer = DocumentVectorizer(zones=['title'], field='lemma', token_filter=tf)
     >>> v = vectorizer.transform(doc)
-    >>> print(v)
-    {'zemích': 1, 'lidí': 1, 'eura': 1, 'půlnoci': 1, 'miliony': 1, 'revoluce': 1, 'kontinentu': 1, 'peníze': 1, 'dějinách': 1}
+    >>> pprint.pprint(v)
+    OrderedDict([('milión`1000000', 1),
+                 ('člověk', 1),
+                 ('země', 1),
+                 ('peníz', 1),
+                 ('euro', 1),
+                 ('revoluce', 1),
+                 ('dějiny', 1),
+                 ('kontinent', 1),
+                 ('půlnoc', 1)])
+
 
     Making better vectorizers
     -------------------------
@@ -62,8 +75,26 @@ class DocumentVectorizer:
 
         Default weights: 1 for each term that appears in the document.
         """
-        output = {}
+        output = collections.OrderedDict()
         for term in document.tokens(zones=self.zones,
                                     **self.vtext_to_stream_kwargs):
             output[term] = 1
+        return output
+
+
+class BinaryVectorizer(DocumentVectorizer):
+    """We suggest using this class in experiments, so that it's obvious
+    what kind of vectors is coming out of it."""
+    pass
+
+
+class TermFrequencyVectorizer(DocumentVectorizer):
+    """The vectorizer for obtaining straightforward term frequencies."""
+    def transform(self, document):
+        output = collections.OrderedDict()
+        for term in document.tokens(zones=self.zones,
+                                    **self.vtext_to_stream_kwargs):
+            if term not in output:
+                output[term] = 0
+            output[term] += 1
         return output
