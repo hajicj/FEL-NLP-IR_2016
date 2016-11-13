@@ -71,13 +71,14 @@ class Similarity:
         return output
 
     def __call__(self, query):
-        # Speedup. Could theoretically be implemented by setting the internal K to math.inf
+        # Could theoretically be implemented by setting the internal K to math.inf
         if self.k is None:
             return {i: self.score(query, d) for i, d in enumerate(self.corpus)}
 
         candidates = {-1: -inf}
         _current_min_score = -inf
         _current_min_idx = -1
+
         for i, d in enumerate(self.corpus):
             score = self.score(query, d)
             if score > _current_min_score:

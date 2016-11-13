@@ -325,7 +325,7 @@ class VText:
                 # (this happens in the assignment data, but you probably
                 #  won't feed in sentences that way during testing/playing
                 #  around, so it's not hardcoded).
-                if _lno == 0:
+                if _lno == 0 or _sentence_ended:
                     continue
                 # New sentence
                 self._sentence_ends_index.append(len(self.tokens))

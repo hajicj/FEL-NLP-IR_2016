@@ -26,7 +26,7 @@ class DocumentVectorizer:
 
     >>> doc = Document('../test_data/LN-20020102001.vert')
     >>> tf = lambda t: t.pos == 'N'
-    >>> vectorizer = DocumentVectorizer(zones=['title'], field='lemma', token_filter=tf)
+    >>> vectorizer = DocumentVectorizer(zones=['TITLE'], field='lemma', token_filter=tf)
     >>> v = vectorizer.transform(doc)
     >>> pprint.pprint(v)
     OrderedDict([('milión`1000000', 1),

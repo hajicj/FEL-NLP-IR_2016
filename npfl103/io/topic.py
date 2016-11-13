@@ -21,17 +21,24 @@ class Topic(DocumentBase):
 
     The zones are again represented as VTexts.
 
-    >>> description = t.desc
+    >>> description = t.descs[0]
     >>> print(description.to_text())
     Najděte dokumenty o růstech cen po zavedení Eura .
 
 
     """
+    zones = ['title', 'desc', 'narr']
+
     def __init__(self, fname):
         xmldoc = self.load_xmldoc(fname)
 
         self.tid = self.xmldoc2text(xmldoc, 'num')
 
-        self.title = self.xmldoc2vtext(xmldoc, 'title')
-        self.desc = self.xmldoc2vtext(xmldoc, 'desc')
-        self.narr = self.xmldoc2vtext(xmldoc, 'narr')
+        self._vtexts, self._vtext_zones = self.parse_vtexts(xmldoc, self.zones)
+
+        self.titles = [vt for i, vt in enumerate(self._vtexts)
+                       if self._vtext_zones[i] == 'title']
+        self.descs = [vt for i, vt in enumerate(self._vtexts)
+                       if self._vtext_zones[i] == 'desc']
+        self.narrs = [vt for i, vt in enumerate(self._vtexts)
+                       if self._vtext_zones[i] == 'narr']

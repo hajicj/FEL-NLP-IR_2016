@@ -1,6 +1,11 @@
 """This module implements a class that..."""
 from __future__ import print_function, unicode_literals
+import logging
 import os
+
+import xml.etree.ElementTree as ET
+
+import time
 
 from npfl103.io.document import Document
 from npfl103.io.topic import Topic
@@ -86,8 +91,19 @@ class Collection:
             return self.load_document(item)
 
     def __iter__(self):
+        _time_start = time.clock()
         for i in range(len(self.document_list)):
-            yield self[i]
+            if i % 1000 == 0 and i != 0:
+                _now = time.clock()
+                print('Loaded {0} documents in {1:.2f} s, {2:.5f} s'
+                      ' average per document.'.format(i, _now - _time_start,
+                                                      (_now - _time_start) / i))
+            try:
+                yield self[i]
+            except (ET.ParseError, TypeError):
+                logging.error('Could not parse document no. {0}, fname {1}'
+                              ''.format(i, self.document_list[i]))
+                raise
 
     def __len__(self):
         return len(self.document_list)
@@ -99,6 +115,9 @@ class Collection:
                              'available)'.format(index, len(self.document_list)))
 
         fname = os.path.join(self.docpath, self.document_list[index])
+        if not os.path.isfile(fname):
+            # Try a gzipped version?
+            fname += '.gz'
         if not os.path.isfile(fname):
             raise ValueError('Document no. {0} not found! (Fname: {1}, '
                              'docpath: {2})'
