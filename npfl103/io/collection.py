@@ -26,18 +26,21 @@ class Collection:
     (For instance, if you have absolute paths in ``documents.list``,
     you would use ``docpath=''``.)
 
-    >>> corpus = Collection('../test_data/test-documents.list')
+    >>> corpus = Collection('../test_data/test-documents-tiny.list')
     >>> len(corpus)
-    1
-    >>> print(corpus[0].text.to_text(sentence_idxs=[1, 3]))
+    4
+    >>> print(corpus[0].texts[0].to_text(sentence_idxs=[1, 3]))
     leden provázely v celé Evropě bouřlivé oslavy a ohňostroje .
     " Nevypadají jako opravdové .
 
     The Collection supports iteration over documents:
 
     >>> for doc in corpus:
-    ...     print(len(doc.text))
+    ...     print(len(list(doc.tokens(zones=['TEXT']))))
     354
+    1290
+    364
+    393
 
     The documents are loaded lazily (only parsed when requested)
     and cached.

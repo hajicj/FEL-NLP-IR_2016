@@ -158,6 +158,7 @@ class DocumentBase:
             if len(open_tags) > 1:
                 raise ValueError('Line {0}: too many open tags: {1}\n'
                                  'Line: {2}'.format(lno, open_tags, line))
+
             close_tags = re_close_tag.findall(line)
             if len(close_tags) > 1:
                 raise ValueError('Line {0}: too many close tags: {1}\n'
@@ -165,7 +166,9 @@ class DocumentBase:
 
             otag = None
             if len(open_tags) > 0:
-                otag = open_tags[0]
+                # There might be attributes in the open tag; we ignore them
+                otag = open_tags[0].split()[0]
+                #otag = open_tags[0]
             ctag = None
             if len(close_tags) > 0:
                 ctag = close_tags[0]
@@ -249,6 +252,9 @@ class Document(DocumentBase):
 
     >>> d.docno
     'LN-20020102001'
+
+    The ``docno`` is really important, because it identifies the document
+    for the purposes of recording retrieval results. Don't mess with ``docno``.
 
     The document has a ``TITLE`` zone, a ``TEXT`` zone, and a ``HEADING``
     zone. Each zone can contain multiple texts, in the order in which

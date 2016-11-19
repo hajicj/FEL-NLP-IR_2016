@@ -33,20 +33,26 @@ class Similarity:
     >>> from npfl103.io import Collection, BinaryVectorizer, Topic
     >>> from npfl103.transform import TransformCorpus
 
-    >>> coll_d = Collection('test_data/test-documents.list')
+    >>> coll_d = Collection('test_data/test-documents-tiny.list')
     >>> vec_d = TransformCorpus(coll_d, BinaryVectorizer().transform, 'document_vecs')
     >>> sim = Similarity(vec_d, k=10)   # It's 10 by default.
 
     Now build the query corpus:
 
     >>> coll_q = Collection('test_data/test-topics.list', document_cls=Topic)
+    >>> ts = [t for t in coll_q]
+    >>> len(ts)
+    2
+
     >>> vec_q = TransformCorpus(coll_q, BinaryVectorizer().transform, 'query_vecs')
 
     Once again: the ``Similarity`` class transforms the *query* to the
     *similarity space*. Like this:
 
-    >>> sim = TransformCorpus(vec_q, sim, 'similarity')
-    >>> similarity_outputs = [s for s in sim]
+    >>> sc = TransformCorpus(vec_q, sim, 'similarity')
+    >>> similarity_outputs = [s for s in sc]
+    >>> len(similarity_outputs)
+    2
     """
 
     def __init__(self, corpus, k=10):

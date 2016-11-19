@@ -1,0 +1,264 @@
+<DOC>
+<DOCID>MF-20020422569</DOCID>
+<DOCNO>MF-20020422569</DOCNO>
+<DATE>04/22/02</DATE>
+<TITLE>
+1	Ekologové	ekolog	NNMP1-----A----	2	ExD
+2	:	:	Z:-------------	0	Coord
+3	život	život	NNIS1-----A----	2	ExD
+4	bez	bez-1	RR--2----------	3	AuxP
+5	aut	auto	NNNP2-----A----	4	Atr
+
+</TITLE>
+<GEOGRAPHY>Plzeň</GEOGRAPHY>
+<TEXT>
+1	Dny	den_^(jednotka_času)	NNIP1-----A----	12	Sb
+2	alternativní	alternativní	AAFS2----1A----	3	Atr
+3	dopravy	doprava	NNFS2-----A----	1	Atr
+4	,	,	Z:-------------	6	AuxX
+5	které	který	P4FS2----------	6	Sb
+6	upozorní	upozornit_:W	VB-S---3P-AA---	1	Atr
+7	veřejnost	veřejnost_^(*3ý)	NNFS4-----A----	6	Obj
+8	na	na-1	RR--4----------	6	AuxP
+9	problémy	problém	NNIP4-----A----	8	Atr
+10	automobilismu	automobilismus	NNIS2-----A----	9	Atr
+11	,	,	Z:-------------	6	AuxX
+12	začínají	začínat_:T	VB-P---3P-AA---	0	Pred
+13	dnes	dnes	Db-------------	12	Adv
+14	v	v-1	RR--6----------	12	AuxP
+15	Plzni	Plzeň_;G	NNFS6-----A----	14	Adv
+16	.	.	Z:-------------	0	AuxK
+
+1	"	"	Z:-------------	14	AuxG
+2	Přestože	přestože	J,-------------	14	AuxC
+3	automobilová	automobilový	AAFS1----1A----	4	Atr
+4	doprava	doprava	NNFS1-----A----	5	Sb
+5	patří	patřit_:T	VB-S---3P-AA---	2	Adv
+6	mezi	mezi-1	RR--4----------	5	AuxP
+7	nejvýznamnější	významný	AAMP4----3A----	8	Atr
+8	znečišťovatele	znečišťovatel	NNMP4-----A----	6	Adv
+9	životního	životní_^(souvisí_se_životem;_prostředí,...)	AANS2----1A----	10	Atr
+10	prostředí	prostředí	NNNS2-----A----	8	Atr
+11	v	v-1	RR--6----------	8	AuxP
+12	Plzni	Plzeň_;G	NNFS6-----A----	11	Atr
+13	,	,	Z:-------------	2	AuxX
+14	není	být	VB-S---3P-NA---	0	Pred
+15	ze	z-1	RV--2----------	16	AuxP
+16	strany	strana-1_^(v_prostoru)	NNFS2-----A----	14	AuxP
+17	magistrátu	magistrát	NNIS2-----A----	16	Atr
+18	patrná	patrný	AAFS1----1A----	14	Pnom
+19	výrazná	výrazný	AAFS1----1A----	20	Atr
+20	snaha	snaha	NNFS1-----A----	14	Sb
+21	o	o-1	RR--4----------	20	AuxP
+22	podporu	podpora_^(peníze;_tyč;_morální_p.)	NNFS4-----A----	21	Atr
+23	ekologicky	ekologicky_^(*1ý)	Dg-------1A----	24	Adv
+24	šetrnějších	šetrný	AAFP2----2A----	25	Atr
+25	alternativ	alternativa	NNFP2-----A----	22	Atr
+26	.	.	Z:-------------	0	AuxK
+
+1	Proto	proto-1_^(proto;_a_proto,_ale_proto,...)	J^-------------	12	Adv
+2	jsme	být	VB-P---1P-AA---	4	AuxV
+3	se	se_^(zvr._zájmeno/částice)	P7-X4----------	4	AuxT
+4	rozhodli	rozhodnout_:W	VpMP---XR-AA--1	1	Pred
+5	tuto	tento	PDFS4----------	6	Atr
+6	mezeru	mezera	NNFS4-----A----	9	Obj
+7	alespoň	alespoň	Db-------------	9	AuxZ
+8	zčásti	zčásti	Db-------------	9	Adv
+9	zaplnit	zaplnit_:W	Vf--------A----	4	Obj
+10	,	,	Z:-------------	1	AuxX
+11	"	"	Z:-------------	1	AuxG
+12	řekl	říci_:W	VpYS---XR-AA---	0	Pred
+13	Vít	Vít_;Y	NNMS1-----A----	14	Atr
+14	Roušal	Roušal_;S	NNMS1-----A----	12	Sb
+15	z	z-1	RR--2----------	14	AuxP
+16	pořádající	pořádající_^(*4t)	AGFS2-----A----	18	Atr
+17	ekologické	ekologický	AAFS2----1A----	18	Atr
+18	organizace	organizace	NNFS2-----A----	15	Atr
+19	Děti	dítě	NNFP1-----A----	18	Atr
+20	Země	země	NNFS2-----A----	19	Atr
+21	.	.	Z:-------------	0	AuxK
+
+1	Akci	akce	NNFS4-----A----	2	Obj
+2	odstartují	odstartovat_:W	VB-P---3P-AA---	0	Pred
+3	ekologové	ekolog	NNMP1-----A----	2	Sb
+4	dnes	dnes	Db-------------	2	Adv
+5	odpoledne	odpoledne-1	Db-------------	2	Adv
+6	výstavou	výstava	NNFS7-----A----	2	Obj
+7	o	o-1	RR--6----------	6	AuxP
+8	dopravě	doprava	NNFS6-----A----	7	Atr
+9	v	v-1	RR--6----------	8	AuxP
+10	Plzni	Plzeň_;G	NNFS6-----A----	9	Atr
+11	na	na-1	RR--6----------	10	AuxP
+12	pěší	pěší	AAFS6----1A----	13	Atr
+13	zóně	zóna	NNFS6-----A----	11	Atr
+14	U	u-1	RR--2----------	13	AuxP
+15	Branky	Branca_;G	NNFS2-----A----	14	Atr
+16	.	.	Z:-------------	0	AuxK
+
+1	Zítra	zítra	Db-------------	3	Adv
+2	organizátoři	organizátor	NNMP1-----A----	8	Sb
+3	chystají	chystat_:T	VB-P---3P-AA---	8	Pred
+4	jízdu	jízda	NNFS4-----A----	3	Obj
+5	městem	město	NNNS7-----A----	3	Adv
+6	na	na-1	RR--6----------	5	AuxP
+7	kolech	kolo	NNNP6-----A----	6	Atr
+8	a	a-1	J^-------------	0	Coord
+9	chtějí	chtít	VB-P---3P-AA---	8	Pred
+10	upozornit	upozornit_:W	Vf--------A----	9	Obj
+11	na	na-1	RR--4----------	10	AuxP
+12	nedostatek	nedostatek	NNIS4-----A----	11	Adv
+13	vhodných	vhodný	AAFP2----1A----	15	Atr
+14	cyklistických	cyklistický	AAFP2----1A----	15	Atr
+15	tras	trasa	NNFP2-----A----	12	Atr
+16	.	.	Z:-------------	0	AuxK
+
+1	Středeční	středeční	AAFS1----1A----	2	Atr
+2	jízda	jízda	NNFS1-----A----	8	Sb
+3	zvláštního	zvláštní	AAIS2----1A----	4	Atr
+4	vlaku	vlak	NNIS2-----A----	2	Atr
+5	po	po-1	RR--6----------	2	AuxP
+6	příměstských	příměstský	AAFP6----1A----	7	Atr
+7	tratích	trať	NNFP6-----A----	5	Atr
+8	má	mít	VB-S---3P-AA---	0	Pred
+9	zase	zase	Db-------------	8	Adv
+10	ukázat	ukázat	Vf--------A----	8	Obj
+11	výhody	výhoda	NNFP4-----A----	10	Obj
+12	železniční	železniční_,a	AAFS2----1A----	13	Atr
+13	dopravy	doprava	NNFS2-----A----	11	Atr
+14	.	.	Z:-------------	0	AuxK
+
+1	Ekologové	ekolog	NNMP1-----A----	2	Sb
+2	plánují	plánovat_:T	VB-P---3P-AA---	0	Pred
+3	i	i-1	J^-------------	5	AuxZ
+4	bezplatné	bezplatný	AAFP1----1A----	5	Atr
+5	jízdy	jízda	NNFP1-----A----	2	Sb
+6	trolejbusem	trolejbus	NNIS7-----A----	5	Atr
+7	.	.	Z:-------------	0	AuxK
+
+1	Plzeň	Plzeň_;G	NNFS1-----A----	14	Sb
+2	-	-	Z:-------------	3	Coord
+3	Dny	dna_^(nemoc)	NNFS2-----A----	1	Atr
+4	alternativní	alternativní	AAFS2----1A----	5	Atr
+5	dopravy	doprava	NNFS2-----A----	3	Atr
+6	,	,	Z:-------------	8	AuxX
+7	které	který	P4FS2----------	8	Sb
+8	upozorní	upozornit_:W	VB-S---3P-AA---	2	Pred
+9	veřejnost	veřejnost_^(*3ý)	NNFS4-----A----	8	Obj
+10	na	na-1	RR--4----------	8	AuxP
+11	problémy	problém	NNIP4-----A----	10	Atr
+12	automobilismu	automobilismus	NNIS2-----A----	11	Atr
+13	,	,	Z:-------------	8	AuxX
+14	začínají	začínat_:T	VB-P---3P-AA---	0	Pred
+15	dnes	dnes	Db-------------	14	Adv
+16	v	v-1	RR--6----------	14	AuxP
+17	Plzni	Plzeň_;G	NNFS6-----A----	16	Adv
+18	.	.	Z:-------------	0	AuxK
+
+1	"	"	Z:-------------	14	AuxG
+2	Přestože	přestože	J,-------------	14	AuxC
+3	automobilová	automobilový	AAFS1----1A----	4	Atr
+4	doprava	doprava	NNFS1-----A----	5	Sb
+5	patří	patřit_:T	VB-S---3P-AA---	2	Adv
+6	mezi	mezi-1	RR--4----------	5	AuxP
+7	nejvýznamnější	významný	AAMP4----3A----	8	Atr
+8	znečišťovatele	znečišťovatel	NNMP4-----A----	6	Adv
+9	životního	životní_^(souvisí_se_životem;_prostředí,...)	AANS2----1A----	10	Atr
+10	prostředí	prostředí	NNNS2-----A----	8	Atr
+11	v	v-1	RR--6----------	8	AuxP
+12	Plzni	Plzeň_;G	NNFS6-----A----	11	Atr
+13	,	,	Z:-------------	2	AuxX
+14	není	být	VB-S---3P-NA---	0	Pred
+15	ze	z-1	RV--2----------	16	AuxP
+16	strany	strana-1_^(v_prostoru)	NNFS2-----A----	14	AuxP
+17	magistrátu	magistrát	NNIS2-----A----	16	Atr
+18	patrná	patrný	AAFS1----1A----	14	Pnom
+19	výrazná	výrazný	AAFS1----1A----	20	Atr
+20	snaha	snaha	NNFS1-----A----	14	Sb
+21	o	o-1	RR--4----------	20	AuxP
+22	podporu	podpora_^(peníze;_tyč;_morální_p.)	NNFS4-----A----	21	Atr
+23	ekologicky	ekologicky_^(*1ý)	Dg-------1A----	24	Adv
+24	šetrnějších	šetrný	AAFP2----2A----	25	Atr
+25	alternativ	alternativa	NNFP2-----A----	22	Atr
+26	.	.	Z:-------------	0	AuxK
+
+1	Proto	proto-1_^(proto;_a_proto,_ale_proto,...)	J^-------------	12	Adv
+2	jsme	být	VB-P---1P-AA---	4	AuxV
+3	se	se_^(zvr._zájmeno/částice)	P7-X4----------	4	AuxT
+4	rozhodli	rozhodnout_:W	VpMP---XR-AA--1	1	Pred
+5	tuto	tento	PDFS4----------	6	Atr
+6	mezeru	mezera	NNFS4-----A----	9	Obj
+7	alespoň	alespoň	Db-------------	9	AuxZ
+8	zčásti	zčásti	Db-------------	9	Adv
+9	zaplnit	zaplnit_:W	Vf--------A----	4	Obj
+10	,	,	Z:-------------	1	AuxX
+11	"	"	Z:-------------	1	AuxG
+12	řekl	říci_:W	VpYS---XR-AA---	0	Pred
+13	Vít	Vít_;Y	NNMS1-----A----	14	Atr
+14	Roušal	Roušal_;S	NNMS1-----A----	12	Sb
+15	z	z-1	RR--2----------	14	AuxP
+16	pořádající	pořádající_^(*4t)	AGFS2-----A----	18	Atr
+17	ekologické	ekologický	AAFS2----1A----	18	Atr
+18	organizace	organizace	NNFS2-----A----	15	Atr
+19	Děti	dítě	NNFP1-----A----	18	Atr
+20	Země	země	NNFS2-----A----	19	Atr
+21	.	.	Z:-------------	0	AuxK
+
+1	Akci	akce	NNFS4-----A----	2	Obj
+2	odstartují	odstartovat_:W	VB-P---3P-AA---	0	Pred
+3	ekologové	ekolog	NNMP1-----A----	2	Sb
+4	dnes	dnes	Db-------------	2	Adv
+5	odpoledne	odpoledne-1	Db-------------	2	Adv
+6	výstavou	výstava	NNFS7-----A----	2	Obj
+7	o	o-1	RR--6----------	6	AuxP
+8	dopravě	doprava	NNFS6-----A----	7	Atr
+9	v	v-1	RR--6----------	8	AuxP
+10	Plzni	Plzeň_;G	NNFS6-----A----	9	Atr
+11	na	na-1	RR--6----------	10	AuxP
+12	pěší	pěší	AAFS6----1A----	13	Atr
+13	zóně	zóna	NNFS6-----A----	11	Atr
+14	U	u-1	RR--2----------	13	AuxP
+15	Branky	Branca_;G	NNFS2-----A----	14	Atr
+16	.	.	Z:-------------	0	AuxK
+
+1	Zítra	zítra	Db-------------	3	Adv
+2	organizátoři	organizátor	NNMP1-----A----	8	Sb
+3	chystají	chystat_:T	VB-P---3P-AA---	8	Pred
+4	jízdu	jízda	NNFS4-----A----	3	Obj
+5	městem	město	NNNS7-----A----	3	Adv
+6	na	na-1	RR--6----------	5	AuxP
+7	kolech	kolo	NNNP6-----A----	6	Atr
+8	a	a-1	J^-------------	0	Coord
+9	chtějí	chtít	VB-P---3P-AA---	8	Pred
+10	upozornit	upozornit_:W	Vf--------A----	9	Obj
+11	na	na-1	RR--4----------	10	AuxP
+12	nedostatek	nedostatek	NNIS4-----A----	11	Adv
+13	vhodných	vhodný	AAFP2----1A----	15	Atr
+14	cyklistických	cyklistický	AAFP2----1A----	15	Atr
+15	tras	trasa	NNFP2-----A----	12	Atr
+16	.	.	Z:-------------	0	AuxK
+
+1	Středeční	středeční	AAFS1----1A----	2	Atr
+2	jízda	jízda	NNFS1-----A----	8	Sb
+3	zvláštního	zvláštní	AAIS2----1A----	4	Atr
+4	vlaku	vlak	NNIS2-----A----	2	Atr
+5	po	po-1	RR--6----------	2	AuxP
+6	příměstských	příměstský	AAFP6----1A----	7	Atr
+7	tratích	trať	NNFP6-----A----	5	Atr
+8	má	mít	VB-S---3P-AA---	0	Pred
+9	zase	zase	Db-------------	8	Adv
+10	ukázat	ukázat	Vf--------A----	8	Obj
+11	výhody	výhoda	NNFP4-----A----	10	Obj
+12	železniční	železniční_,a	AAFS2----1A----	13	Atr
+13	dopravy	doprava	NNFS2-----A----	11	Atr
+14	.	.	Z:-------------	0	AuxK
+
+1	Ekologové	ekolog	NNMP1-----A----	2	Sb
+2	plánují	plánovat_:T	VB-P---3P-AA---	0	Pred
+3	i	i-1	J^-------------	5	AuxZ
+4	bezplatné	bezplatný	AAFP1----1A----	5	Atr
+5	jízdy	jízda	NNFP1-----A----	2	Sb
+6	trolejbusem	trolejbus	NNIS7-----A----	5	Atr
+7	.	.	Z:-------------	0	AuxK
+
+</TEXT>
+</DOC>

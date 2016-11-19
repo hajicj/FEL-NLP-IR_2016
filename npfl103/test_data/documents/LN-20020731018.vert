@@ -1,0 +1,255 @@
+<DOC>
+<DOCID>LN-20020731018</DOCID>
+<DOCNO>LN-20020731018</DOCNO>
+<DATE>07/31/02</DATE>
+<GEOGRAPHY>PRAHA</GEOGRAPHY>
+<TEXT>
+1	Dolů	dolů	Db-------------	2	Adv
+2	a	a-1	J^-------------	0	Coord
+3	zase	zase	Db-------------	2	Adv
+4	nahoru	nahoru	Db-------------	2	Adv
+5	.	.	Z:-------------	0	AuxK
+
+1	Tak	tak-3	Db-------------	3	Adv
+2	se	se_^(zvr._zájmeno/částice)	P7-X4----------	3	AuxT
+3	vyvíjel	vyvíjet_:T	VpYS---XR-AA---	0	Pred
+4	kurs	kurs-1_^(měny,akcií,...)	NNIS1-----A----	3	Sb
+5	eura	euro_;b_^(evr._měna)	NNNS2-----A----	4	Atr
+6	vůči	vůči	RR--3----------	4	AuxP
+7	americkému	americký	AAIS3----1A----	8	Atr
+8	dolaru	dolar_;b	NNIS3-----A----	6	Atr
+9	od	od-1	RR--2----------	5	AuxP
+10	přijetí	přijetí-1_^(např._autem)_(*3-1)	NNNS2-----A----	9	Atr
+11	společné	společný	AAFS2----1A----	13	Atr
+12	evropské	evropský	AAFS2----1A----	13	Atr
+13	měny	měna	NNFS2-----A----	10	Atr
+14	v	v-1	RR--6----------	13	AuxP
+15	lednu	leden	NNIS6-----A----	14	Adv
+16	1999	1999	C=-------------	15	Atr
+17	.	.	Z:-------------	0	AuxK
+
+1	V	v-1	RR--6----------	13	AuxP
+2	době	doba	NNFS6-----A----	1	Adv
+3	,	,	Z:-------------	5	AuxX
+4	kdy	kdy	Db-------------	13	Adv
+5	jedenáct	jedenáct`11	Cn-S4----------	11	Atr
+6	zemí	země	NNFP2-----A----	5	Atr
+7	Evropské	evropský	AAFS2----1A----	9	Atr
+8	měnové	měnový	AAFS2----1A----	9	Atr
+9	unie	unie	NNFS2-----A----	6	Atr
+10	(	(	Z:-------------	6	Apos
+11	EMU	ema	NNFS4-----A----	13	Sb
+12	)	)	Z:-------------	10	AuxG
+13	zafixovalo	zafixovat_:W	VpNS---XR-AA---	0	Pred
+14	své	svůj-1_^(přivlast.)	P8FP4---------1	15	Atr
+15	měny	měna	NNFP4-----A----	13	Obj
+16	k	k-1	RR--3----------	13	AuxP
+17	euru	euro_;b_^(evr._měna)	NNNS3-----A----	16	Atr
+18	,	,	Z:-------------	22	AuxX
+19	se	se_^(zvr._zájmeno/částice)	P7-X4----------	22	AuxT
+20	jedno	jeden`1	ClNS1----------	21	Atr
+21	euro	euro_;b_^(evr._měna)	NNNS1-----A----	22	Sb
+22	prodávalo	prodávat_:T_^(*4at)	VpNS---XR-AA---	17	Atr
+23	za	za-1	RR--4----------	22	AuxP
+24	1	1	NNMS1-----A----	23	Adv
+25	,	,	Z:-------------	23	Coord
+26	17	17	C=-------------	22	Obj
+27	dolaru	dolar_;b	NNIS2-----A----	26	Atr
+28	.	.	Z:-------------	0	AuxK
+
+1	Odborníci	odborník	NNMP1-----A----	2	Sb
+2	podotýkali	podotýkat_:T	VpMP---XR-AA---	0	Pred
+3	,	,	Z:-------------	4	AuxX
+4	že	že	J,-------------	2	AuxC
+5	nová	nový	AAFS1----1A----	6	Atr
+6	měna	měna	NNFS1-----A----	7	Sb
+7	je	být	VB-S---3P-AA---	8	AuxV
+8	nadhodnocena	nadhodnotit_:W	VsQW---XX-AP---	9	Pred
+9	a	a-1	J^-------------	4	Coord
+10	během	během	RR--2----------	14	AuxP
+11	několika	několik	Ca--2----------	12	Atr
+12	měsíců	měsíc	NNIP2-----A----	10	Adv
+13	bude	být	VB-S---3F-AA---	14	AuxV
+14	ztrácet	ztrácet_:T	Vf--------A----	9	Pred
+15	.	.	Z:-------------	0	AuxK
+
+1	Jejich	jeho_^(přivlast.)	PSXXXXP3-------	2	Atr
+2	prognózy	prognóza	NNFS2-----A----	4	Sb
+3	se	se_^(zvr._zájmeno/částice)	P7-X4----------	4	AuxR
+4	potvrdily	potvrdit_:W	VpTP---XR-AA---	0	Pred
+5	už	už	Db-------------	7	AuxZ
+6	v	v-1	RR--6----------	4	AuxP
+7	březnu	březen	NNIS6-----A----	6	Adv
+8	1999	1999	C=-------------	7	Atr
+9	.	.	Z:-------------	0	AuxK
+
+1	Americká	americký	AAFS1----1A----	2	Atr
+2	ekonomika	ekonomika	NNFS1-----A----	5	Sb
+3	na	na-1	RR--6----------	5	AuxP
+4	tom	ten	PDZS6----------	3	Atr
+5	byla	být	VpQW---XR-AA---	8	Pred
+6	tehdy	tehdy	Db-------------	7	Adv
+7	dobře	dobře	Dg-------1A----	8	Adv
+8	a	a-1	J^-------------	0	Coord
+9	mnoho	mnoho-1	Ca--1----------	12	Sb
+10	zahraničních	zahraniční	AAMP2----1A----	11	Atr
+11	investorů	investor	NNMP2-----A----	9	Atr
+12	nakupovalo	nakupovat_:T	VpNS---XR-AA---	8	Pred
+13	dolary	dolar_;b	NNIP4-----A----	12	Obj
+14	.	.	Z:-------------	0	AuxK
+
+1	V	v-1	RR--6----------	4	AuxP
+2	listopadu	listopad	NNIS6-----A----	1	Adv
+3	1999	1999	C=-------------	2	Atr
+4	bylo	být	VpNS---XR-AA---	0	Pred
+5	euro	euro_;b_^(evr._měna)	NNNS1-----A----	4	Sb
+6	poprvé	poprvé	Cv-------------	7	Adv
+7	levnější	levný	AAFS1----2A----	4	Pnom
+8	než	než-2	J,-------------	7	AuxC
+9	dolar	dolar_;b	NNIS1-----A----	8	ExD
+10	.	.	Z:-------------	0	AuxK
+
+1	Evropskou	evropský	AAFS4----1A----	3	Atr
+2	centrální	centrální	AAFS4----1A----	3	Atr
+3	banku	banka	NNFS4-----A----	4	Atr
+4	(	(	Z:-------------	0	ExD
+5	ECB	ECB-2_:B_,t_^(event_control_block)	NNIXX-----A----	4	Atr
+6	)	)	Z:-------------	4	AuxG
+7	to	ten	PDNS1----------	9	Sb
+8	příliš	příliš	Db-------------	9	Adv
+9	nerozházelo	rozházet_:W	VpNS---XR-NA---	10	Pred
+10	a	a-1	J^-------------	3	Coord
+11	svou	svůj-1_^(přivlast.)	P8FS4---------1	12	Atr
+12	pomoc	pomoc	NNFS4-----A----	14	Obj
+13	euru	euro_;b_^(evr._měna)	NNNS3-----A----	12	Atr
+14	omezovala	omezovat_:T	VpQW---XR-AA---	10	Pred
+15	jen	jen-1_^(pouze)	TT-------------	18	AuxZ
+16	na	na-1	RR--4----------	14	AuxP
+17	nevýrazné	výrazný	AANS4----1N----	18	Atr
+18	zvyšování	zvyšování_^(*3at)	NNNS4-----A----	16	Adv
+19	svých	svůj-1_^(přivlast.)	P8XP2----------	21	Atr
+20	úrokových	úrokový	AAFP2----1A----	21	Atr
+21	sazeb	sazba	NNFP2-----A----	18	Atr
+22	.	.	Z:-------------	0	AuxK
+
+1	Pozdější	pozdní-1_^(v_krátkém_čase,_následující_o_něco_později)	AAFS1----2A----	2	Atr
+2	intervence	intervence	NNFS1-----A----	16	Obj
+3	,	,	Z:-------------	6	AuxX
+4	které	který	P4NS4----------	6	Obj
+5	ECB	ECB-1_:B_,t_^(electronic_code_book)	NNFXX-----A----	6	Sb
+6	prováděla	provádět_:T	VpQW---XR-AA---	2	Atr
+7	ve	v-1	RV--6----------	9	AuxP
+8	spolupráci	spolupráce	NNFS6-----A----	7	Adv
+9	s	s-1	RR--7----------	6	AuxP
+10	japonskou	japonský	AAFS7----1A----	11	Atr
+11	a	a-1	J^-------------	14	Coord
+12	americkou	americký	AAFS7----1A----	11	Atr
+13	centrální	centrální	AAFS7----1A----	14	Atr
+14	bankou	banka	NNFS7-----A----	9	Atr
+15	,	,	Z:-------------	6	AuxX
+16	vychylovaly	vychylovat_:T	VpTP---XR-AA---	0	Pred
+17	euro	euro_;b_^(evr._měna)	NNNS1-----A----	16	Sb
+18	od	od-1	RR--2----------	16	AuxP
+19	vytrvalého	vytrvalý	AAIS2----1A----	20	Atr
+20	sestupu	sestup	NNIS2-----A----	18	Atr
+21	jen	jen-1_^(pouze)	TT-------------	22	AuxZ
+22	nakrátko	nakrátko	Db-------------	16	Adv
+23	.	.	Z:-------------	0	AuxK
+
+1	V	v-1	RR--6----------	4	AuxP
+2	říjnu	říjen	NNIS6-----A----	1	Adv
+3	2000	2000	C=-------------	2	Atr
+4	dosáhlo	dosáhnout	VpNS---XR-AA---	0	Pred
+5	euro	euro_;b_^(evr._měna)	NNNS1-----A----	4	Sb
+6	minima	minimum	NNNS2-----A----	5	Atr
+7	,	,	Z:-------------	8	AuxX
+8	když	když	J,-------------	4	AuxC
+9	se	se_^(zvr._zájmeno/částice)	P7-X4----------	10	AuxT
+10	prodávalo	prodávat_:T_^(*4at)	VpNS---XR-AA---	8	Adv
+11	za	za-1	RR--4----------	10	AuxP
+12	0	0	NNMS1-----A----	11	Adv
+13	,	,	Z:-------------	8	AuxX
+14	828	828	C=-------------	10	Obj
+15	dolaru	dolar_;b	NNIS2-----A----	14	Atr
+16	.	.	Z:-------------	0	AuxK
+
+1	Výraznější	výrazný	AAIP1----2A----	2	Atr
+2	obrat	obrat-1_^(z_prodeje_zboží)	NNIS1-----A----	3	Sb
+3	přinesly	přinést	VpTP---XR-AA---	0	Pred
+4	až	až-3_^(až_k_...,_až_dost)	TT-------------	5	AuxZ
+5	zprávy	zpráva	NNFP1-----A----	3	Sb
+6	o	o-1	RR--6----------	5	AuxP
+7	zpomalování	zpomalování_^(*3at)	NNNS6-----A----	6	Atr
+8	růstu	růst-1	NNIS2-----A----	7	Atr
+9	americké	americký	AAFS2----1A----	10	Atr
+10	ekonomiky	ekonomika	NNFS2-----A----	8	Atr
+11	v	v-1	RR--6----------	8	AuxP
+12	minulém	minulý	AAIS6----1A----	13	Atr
+13	roce	rok	NNIS6-----A---1	11	Atr
+14	.	.	Z:-------------	0	AuxK
+
+1	Euru	euro_;b_^(evr._měna)	NNNS6-----A----	2	Obj
+2	pomohlo	pomoci	VpNS---XR-AA---	0	Pred
+3	i	i-1	J^-------------	5	AuxZ
+4	úspěšné	úspěšný	AANS1----1A----	5	Atr
+5	zavedení	zavedení_^(*5ést)	NNNS1-----A----	2	Sb
+6	eurobankovek	eurobankovka	NNFP2-----A----	7	Atr
+7	a	a-1	J^-------------	5	Coord
+8	euromincí	euromince	NNFP2-----A----	7	Atr
+9	na	na-1	RR--6----------	7	AuxP
+10	začátku	začátek	NNIS6-----A----	9	Atr
+11	letošního	letošní	AAIS2----1A----	12	Atr
+12	roku	rok	NNIS2-----A---1	10	Atr
+13	.	.	Z:-------------	0	AuxK
+
+1	Od	od-1	RR--2----------	18	AuxP
+2	dubna	duben	NNIS2-----A----	1	Adv
+3	,	,	Z:-------------	6	AuxX
+4	kdy	kdy	Db-------------	6	Adv
+5	investoři	investor	NNMP1-----A----	6	Sb
+6	začali	začít-1	VpMP---XR-AA---	0	Pred
+7	ztrácet	ztrácet_:T	Vf--------A----	6	Obj
+8	důvěru	důvěra	NNFS4-----A----	7	Obj
+9	v	v-1	RR--6----------	8	AuxP
+10	americké	americký	AAIP4----1A----	11	Atr
+11	podniky	podnik	NNIP4-----A----	9	Atr
+12	zmítané	zmítaný_^(*2t)	AAIP4----1A----	11	Atr
+13	finančními	finanční	AAIP7----1A----	14	Atr
+14	skandály	skandál	NNIP7-----A----	12	Adv
+15	,	,	Z:-------------	18	AuxX
+16	se	se_^(zvr._zájmeno/částice)	P7-X4----------	18	AuxT
+17	euro	euro_;b_^(evr._měna)	NNNS1-----A----	18	Sb
+18	vydalo	vydat-1_:W_^(emitovat:_cenné_papíry,_knihu,_zvuk,...)	VpNS---XR-AA---	14	Atr
+19	na	na-1	RR--4----------	18	AuxP
+20	cestu	cesta_^(konkrétní_i_abstr.;_i_'soudní_cestou')	NNFS4-----A----	19	Adv
+21	vzhůru	vzhůru	Db-------------	18	Adv
+22	.	.	Z:-------------	0	AuxK
+
+1	Na	na-1	RR--4----------	9	AuxP
+2	kurs	kurs-1_^(měny,akcií,...)	NNIS4-----A----	1	Adv
+3	1	1	NNMS1-----A----	4	Sb
+4	:	:	Z:-------------	9	Coord
+5	1	1	NNMS1-----A----	9	Sb
+6	vůči	vůči	RR--3----------	5	AuxP
+7	dolaru	dolar_;b	NNIS3-----A----	6	Atr
+8	se	se_^(zvr._zájmeno/částice)	P7-X4----------	9	AuxT
+9	vrátilo	vrátit_:W	VpNS---XR-AA---	0	Pred
+10	15	15	C=-------------	9	Sb
+11	.	.	Z:-------------	0	AuxK
+
+1	července	červenec	NNIS2-----A----	0	ExD
+2	.	.	Z:-------------	0	AuxK
+
+1	Včera	včera	Db-------------	4	Adv
+2	se	se_^(zvr._zájmeno/částice)	P7-X4----------	4	AuxT
+3	euro	euro_;b_^(evr._měna)	NNNS1-----A----	4	Sb
+4	prodávalo	prodávat_:T_^(*4at)	VpNS---XR-AA---	0	Pred
+5	za	za-1	RR--4----------	4	AuxP
+6	0	0	NNMS1-----A----	5	Adv
+7	,	,	Z:-------------	5	Coord
+8	988	988	C=-------------	4	Obj
+9	dolaru	dolar_;b	NNIS2-----A----	8	Atr
+10	.	.	Z:-------------	0	AuxK
+
+</TEXT>
+</DOC>

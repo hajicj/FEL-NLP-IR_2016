@@ -1,0 +1,129 @@
+<DOC>
+<DOCID>LN-20020201066</DOCID>
+<DOCNO>LN-20020201066</DOCNO>
+<DATE>02/01/02</DATE>
+<GEOGRAPHY>PRAHA</GEOGRAPHY>
+<TEXT>
+1	Růst	růst-1	NNIS1-----A----	11	Sb
+2	hrubého	hrubý	AAIS2----1A----	4	Atr
+3	domácího	domácí	AAIS2----1A----	4	Atr
+4	produktu	produkt	NNIS2-----A----	1	Atr
+5	České	Český-1_;G_^(používá_se_i_pro_jména_org.,_výrobků_atd.)	AAFS2----1A----	6	Atr
+6	republiky	republika	NNFS2-----A----	4	Atr
+7	by	být	Vc-------------	11	AuxV
+8	v	v-1	RR--6----------	11	AuxP
+9	letošním	letošní	AAIS6----1A----	10	Atr
+10	roce	rok	NNIS6-----A---1	8	Adv
+11	měl	mít	VpYS---XR-AA---	0	Pred
+12	podle	podle-2	RR--2----------	11	AuxP
+13	nové	nový	AAFS2----1A----	14	Atr
+14	prognózy	prognóza	NNFS2-----A----	12	Adv
+15	České	Český-1_;G_^(používá_se_i_pro_jména_org.,_výrobků_atd.)	AAFS2----1A----	17	Atr
+16	národní	národní	AAFS2----1A----	17	Atr
+17	banky	banka	NNFS2-----A----	14	Atr
+18	dosáhnout	dosáhnout	Vf--------A----	11	Obj
+19	2	2	NNMS1-----A----	11	Sb
+20	,	,	Z:-------------	22	AuxX
+21	4	4	NNMS1-----A----	22	Sb
+22	až	až-1_^(2_až_3)	J^-------------	24	Coord
+23	3	3	NNMS1-----A----	22	Sb
+24	,	,	Z:-------------	18	Coord
+25	4	4	NNMS1-----A----	24	ExD
+26	procenta	procento	NNNS2-----A----	25	Atr
+27	.	.	Z:-------------	0	AuxK
+
+1	Původní	původní	AAIP1----1A----	2	Atr
+2	předpoklady	předpoklad	NNIP1-----A----	4	Sb
+3	přitom	přitom	Db-------------	4	Adv
+4	hovořily	hovořit_:T	VpTP---XR-AA---	0	Pred
+5	o	o-1	RR--6----------	4	AuxP
+6	růstu	růst-1	NNIS6-----A----	5	Obj
+7	tempem	tempus	NNIS7-----A----	6	Atr
+8	3	3	NNMS1-----A----	4	Sb
+9	,	,	Z:-------------	11	AuxX
+10	4	4	NNMS1-----A----	11	Sb
+11	až	až-1_^(2_až_3)	J^-------------	7	Coord
+12	4	4	NNMS1-----A----	11	Sb
+13	,	,	Z:-------------	11	Sb
+14	4	4	NNMS1-----A----	13	ExD
+15	procenta	procento	NNNS2-----A----	14	Atr
+16	.	.	Z:-------------	0	AuxK
+
+1	Centrální	centrální	AAFS1----1A----	2	Atr
+2	banka	banka	NNFS1-----A----	3	Sb
+3	snížila	snížit_:W	VpQW---XR-AA---	0	Pred
+4	rovněž	rovněž	Db-------------	3	Adv
+5	odhad	odhad	NNIS4-----A----	3	Obj
+6	inflace	inflace	NNFS2-----A----	5	Atr
+7	,	,	Z:-------------	13	AuxX
+8	která	který	P4FS1----------	13	Sb
+9	by	být	Vc-------------	13	AuxV
+10	na	na-1	RR--6----------	13	AuxP
+11	konci	konec	NNIS6-----A----	10	Adv
+12	roku	rok	NNIS2-----A---1	11	Atr
+13	měla	mít	VpQW---XR-AA---	6	Atr
+14	být	být	Vf--------A----	13	Obj
+15	2	2	NNMS1-----A----	13	Sb
+16	,	,	Z:-------------	18	AuxX
+17	5	5	NNMS1-----A----	18	Sb
+18	až	až-1_^(2_až_3)	J^-------------	13	Coord
+19	3	3	NNMS1-----A----	18	Sb
+20	,	,	Z:-------------	27	Coord
+21	8	8	NNMS1-----A----	20	ExD
+22	procenta	procento	NNNS2-----A----	21	Atr
+23	oproti	oproti	RR--3----------	21	AuxP
+24	dosavadním	dosavadní	AAIP3----1A----	25	Atr
+25	odhadům	odhad	NNIP3-----A----	23	Atr
+26	3	3	NNMS1-----A----	29	Atr
+27	,	,	Z:-------------	29	AuxX
+28	3	3	NNMS1-----A----	29	Sb
+29	až	až-1_^(2_až_3)	J^-------------	31	Coord
+30	4	4	NNMS1-----A----	29	Sb
+31	,	,	Z:-------------	17	Apos
+32	7	7	NNMS1-----A----	31	ExD
+33	procenta	procento	NNNS2-----A----	32	Atr
+34	.	.	Z:-------------	0	AuxK
+
+1	V	v-1	RR--6----------	6	AuxP
+2	loňském	loňský	AAIS6----1A----	3	Atr
+3	roce	rok	NNIS6-----A---1	1	Adv
+4	by	být	Vc-------------	5	AuxV
+5	měl	mít	VpYS---XR-AA---	0	Pred
+6	růst	růst-2	Vf--------A----	5	Obj
+7	HDP	HDP_:B_^(hrubý_domácí_produkt)	NNIXX-----A---8	6	Obj
+8	podle	podle-2	RR--2----------	11	AuxP
+9	centrální	centrální	AAFS2----1A----	10	Atr
+10	banky	banka	NNFS2-----A----	8	Adv
+11	činit	činit_:T	Vf--------A----	6	Obj
+12	3	3	NNMS1-----A----	11	Obj
+13	,	,	Z:-------------	22	Coord
+14	4	4	NNMS1-----A----	13	ExD
+15	procenta	procento	NNNS2-----A----	14	Atr
+16	,	,	Z:-------------	5	AuxX
+17	v	v-1	RR--6----------	16	AuxP
+18	roce	rok	NNIS6-----A---1	17	Adv
+19	2003	2003	C=-------------	18	Atr
+20	pak	pak	Db-------------	11	Adv
+21	3	3	NNMS1-----A----	24	Atr
+22	,	,	Z:-------------	24	AuxX
+23	7	7	NNMS1-----A----	24	Sb
+24	až	až-1_^(2_až_3)	J^-------------	26	Coord
+25	4	4	NNMS1-----A----	24	Sb
+26	,	,	Z:-------------	33	Coord
+27	7	7	NNMS1-----A----	26	ExD
+28	procenta	procento	NNNS2-----A----	27	Atr
+29	oproti	oproti	RR--3----------	27	AuxP
+30	dosavadním	dosavadní	AAIP3----1A----	31	Atr
+31	předpokladům	předpoklad	NNIP3-----A----	29	Atr
+32	3	3	NNMS1-----A----	35	Atr
+33	,	,	Z:-------------	35	AuxX
+34	5	5	NNMS1-----A----	35	Sb
+35	až	až-1_^(2_až_3)	J^-------------	37	Coord
+36	4	4	NNMS1-----A----	35	Sb
+37	,	,	Z:-------------	18	Coord
+38	5	5	NNMS1-----A----	37	ExD
+39	procenta	procento	NNNS2-----A----	38	Atr
+40	.	.	Z:-------------	0	AuxK
+
+</TEXT>
+</DOC>
