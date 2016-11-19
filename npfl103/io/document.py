@@ -46,6 +46,12 @@ class DocumentBase:
                 for token in vtext.to_token_stream(**vtext_to_stream_kwargs):
                     yield token
 
+    @property
+    def uid(self):
+        """Returns the document's unique ID by which it should be referred
+        to in the results."""
+        raise NotImplementedError()
+
     @staticmethod
     def parse_vtexts(xmldoc, zones):
         """Returns a list of VTexts and the corresponding zone names."""
@@ -256,6 +262,12 @@ class Document(DocumentBase):
     The ``docno`` is really important, because it identifies the document
     for the purposes of recording retrieval results. Don't mess with ``docno``.
 
+    A more general mechanism to recover a document's identifier is implemented
+    through the ``uid`` property:
+
+    >>> d.uid
+    'LN-20020102001'
+
     The document has a ``TITLE`` zone, a ``TEXT`` zone, and a ``HEADING``
     zone. Each zone can contain multiple texts, in the order in which
     they come in the document. The texts in each zone are represented
@@ -334,3 +346,7 @@ class Document(DocumentBase):
                        if self._vtext_zones[i] == 'HEADING']
         self.texts = [vt for i, vt in enumerate(self._vtexts)
                        if self._vtext_zones[i] == 'TEXT']
+
+    @property
+    def uid(self):
+        return self.docno

@@ -52,3 +52,4 @@ def parse_result_ranks(stream):
         tid, _, docno, rank, _, _ = l.strip().split()
         ranks[(tid, docno)] = int(rank)
 
+    return ranks

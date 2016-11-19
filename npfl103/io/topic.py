@@ -24,6 +24,11 @@ class Topic(DocumentBase):
     >>> t.tid
     '10.2452/401-AH'
 
+    Which is also its ``uid``:
+
+    >>> t.uid
+    '10.2452/401-AH'
+
     The zones are again represented as VTexts.
 
     >>> description = t.descs[0]
@@ -64,3 +69,7 @@ class Topic(DocumentBase):
                       if self._vtext_zones[i] == 'desc']
         self.narrs = [vt for i, vt in enumerate(self._vtexts)
                       if self._vtext_zones[i] == 'narr']
+
+    @property
+    def uid(self):
+        return self.tid

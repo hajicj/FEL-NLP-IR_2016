@@ -4,6 +4,8 @@ from __future__ import print_function, unicode_literals
 import operator
 from math import inf
 
+from npfl103.io import format_as_results
+
 __version__ = "0.0.1"
 __author__ = "Jan Hajic jr."
 
@@ -64,6 +66,9 @@ class Similarity:
         """
         self.corpus = corpus
         self.k = k
+
+        # Collects document IDs
+        self._corpud_ids = None
 
     def score(self, query, document):
         """This is the "clever" part: given two (sparse) vectors

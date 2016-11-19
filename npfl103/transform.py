@@ -3,6 +3,8 @@ from __future__ import print_function, unicode_literals
 
 import pprint
 
+from npfl103.io import Collection
+
 __version__ = "0.0.1"
 __author__ = "Jan Hajic jr."
 
@@ -163,3 +165,15 @@ class TransformCorpus(object):
         for doc in self.corpus:
             yield self.transform(doc)
 
+    @property
+    def collection(self):
+        """Dive down to recover the underlying Collection. Useful
+        mostly for recovering document IDs (docno for outputting query
+        results)."""
+        if isinstance(self.corpus, Collection):
+            return self.corpus
+        elif isinstance(self.corpus, TransformCorpus):
+            return self.corpus.collection()
+        else:
+            raise ValueError('Cannot get collection if self.corpus type'
+                             ' is {0}'.format(type(self.corpus)))
