@@ -50,8 +50,8 @@ def format_as_results(sim_vec, topic_uid, doc_collection,
     sorted_sims = sorted(sim_vec.items(), key=operator.itemgetter(1), reverse=True)
 
     output_lines = []
-    for i, sim in sorted_sims:
-        docno = doc_collection.get_uid(i)
+    for i, (doc_idx, sim) in enumerate(sorted_sims):
+        docno = doc_collection.get_uid(doc_idx)
         output_line = '\t'.join([topic_uid,
                                  '0',
                                  docno,
