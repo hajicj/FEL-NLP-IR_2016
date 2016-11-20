@@ -50,14 +50,15 @@ class Collection:
 
     >>> tcorpus = Collection('../test_data/test-topics.list', document_cls=Topic)
     >>> len(tcorpus)
-    1
+    2
     >>> for topic in tcorpus:
     ...     print(topic.tid)
     10.2452/401-AH
+    10.2452/402-AH
 
     """
     def __init__(self, document_list, docpath=None, cache_disabled=False,
-                 document_cls=Document):
+                 document_cls=Document, name='collection'):
         """Initialize the corpus.
 
         :param document_list: A file with one document path per line.
@@ -69,6 +70,11 @@ class Collection:
         :param nocache: If True, will never cache the loaded documents.
             This decreases memory requirements, but slows down loading
             times when a document is accessed more than once.
+
+        :param document_cls: What kind of documents are the content of this
+            collection? (Mostly: Document, or Topic)
+
+        :param name: What the Collection should be called in logging.
         """
 
         if not os.path.isfile(document_list):
@@ -86,6 +92,9 @@ class Collection:
 
         self._cache_disabled = cache_disabled
         self._cache = {}
+        self.__uid_cache ={}   # This one is persistent.
+
+        self.name = name
 
     def __getitem__(self, item):
         if item in self._cache:
@@ -130,8 +139,17 @@ class Collection:
         if not self._cache_disabled:
             self._cache[index] = document
 
+        self.__uid_cache[index] = document.uid
+
         return document
 
     @property
     def _loaded_idxs(self):
         return self._cache.keys()
+
+    def get_uid(self, idx):
+        """Return the UID of the i-th item in the collection."""
+        try:
+            return self.__uid_cache[idx]
+        except KeyError:
+            return self[idx].uid

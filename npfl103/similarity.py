@@ -1,6 +1,7 @@
 """This module implements a class that..."""
 from __future__ import print_function, unicode_literals
 
+import logging
 import operator
 from math import inf
 
@@ -55,6 +56,19 @@ class Similarity:
     >>> similarity_outputs = [s for s in sc]
     >>> len(similarity_outputs)
     2
+    >>> similarity_outputs[0]
+    {0: 6.0, 1: 11.0, 2: 6.0, 3: 6.0}
+
+    Outputting the results
+    ----------------------
+
+    Pass the similarity TransformCorpus to the ``Similarity.write_trec()``
+    method.
+
+    >>> import io
+    >>> hdl = io.StringIO()
+    >>> Similarity.write_trec(sc, sim, hdl, run_name='test')
+
     """
 
     def __init__(self, corpus, k=10):
@@ -98,4 +112,20 @@ class Similarity:
                 candidates[i] = score
                 _current_min_idx, _current_min_score = min(candidates.items(),
                                                            key=operator.itemgetter(1))
-        return candidates
+
+        # Filter out the remaining -1s in case corpus smaller than k
+        output = {i: sim for i, sim in candidates.items() if i >= 0}
+        return output
+
+    @staticmethod
+    def write_trec(sim_corpus, similarity, stream, run_name='default_run'):
+        doc_collection = similarity.corpus.collection
+        topic_collection = sim_corpus.collection
+        for i, query_results in enumerate(sim_corpus):
+            s = format_as_results(query_results,
+                                  topic_uid=topic_collection.get_uid(i),
+                                  doc_collection=doc_collection,
+                                  run_name=run_name)
+            stream.write(s)
+            logging.warning('Wrote\n{0}\nto stream'.format(s))
+            stream.write('\n')

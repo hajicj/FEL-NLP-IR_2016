@@ -24,7 +24,7 @@ class TransformCorpus(object):
     and mapping it into a vector space.
 
     >>> from npfl103.io import Collection
-    >>> c = Collection('test_data/test-documents.list')
+    >>> c = Collection('test_data/test-documents-tiny.list')
 
     Let's use straightforward term frequencies in the extracted vectors:
 
@@ -114,9 +114,10 @@ class TransformCorpus(object):
     Relationship between TransformedCorpus and Vectorizer
     -----------------------------------------------------
 
-    **TL;DR:** TransformedCorpus is not designed to deal with sequential
+    **TL;DR:** TransformCorpus is not designed to deal with sequential
     data. The job of the Vectorizer is to convert sequential documents
-    to non-sequential vectors.
+    to non-sequential vectors. But to make it more elegant and easily
+    re-iterable, it pays to wrap the Vectorizer into a TransformCorpups.
 
     The Vectorizer could in principle be implemented as a TransformCorpus
     where the ``transform`` callable passed to the TransformCorpus
@@ -124,9 +125,10 @@ class TransformCorpus(object):
     to keep these two things separate: the Vectorizer deals with converting
     the corpus of Documents to sparse vectors, the TransformCorpus
     object deals with pipelining operations in the vector space.
-    It's more of a clarity/comprehensibility thing. Of course,
-    if you want a TransformedCorpus to apply the vectorizer, it's quite
-    straightforward:
+    It's more of a clarity/comprehensibility thing.
+
+    And to put it together, if you want a TransformedCorpus to apply
+    the vectorizer, it's quite straightforward:
 
     >>> vectorizer = TermFrequencyVectorizer(field='lemma', token_filter=tf)
     >>> vec_transform = lambda doc: vectorizer.transform(doc)
@@ -151,8 +153,25 @@ class TransformCorpus(object):
 
     This does have one advantage: the iteration is repeatable. A simple
     generator expression like the one we used for vectorization is
-    a fire-and-forget operation. Using the TransformCorpus enables repeated
+    a fire-and-forget operation, but using the TransformCorpus enables repeated
     iteration with the nicely small generator memory footprint.
+
+    Getting the IDs
+    ---------------
+
+    To make retrieval results traceable, we need to be able to see
+    which document is which after running the transformation. We don't
+    compute that explicitly - we provide a ``collection()`` method
+    that returns the underlying Collection, which in turn has the
+    ``get_uid(idx)`` method that retrieves the UID of the ``idx``-th
+    collection member (document or topic).
+
+    >>> coll = tcorp.collection
+    >>> len(coll)
+    4
+    >>> coll.get_uid(2)
+    'LN-20020102101'
+
     """
     def __init__(self, corpus, transform, name):
         """Initialize MyClass."""
@@ -169,11 +188,12 @@ class TransformCorpus(object):
     def collection(self):
         """Dive down to recover the underlying Collection. Useful
         mostly for recovering document IDs (docno for outputting query
-        results)."""
+        results).
+        """
         if isinstance(self.corpus, Collection):
             return self.corpus
         elif isinstance(self.corpus, TransformCorpus):
-            return self.corpus.collection()
+            return self.corpus.collection
         else:
             raise ValueError('Cannot get collection if self.corpus type'
                              ' is {0}'.format(type(self.corpus)))
