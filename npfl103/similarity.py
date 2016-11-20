@@ -69,6 +69,9 @@ class Similarity:
     >>> hdl = io.StringIO()
     >>> Similarity.write_trec(sc, sim, hdl, run_name='test')
 
+    Afterwards, use the TREC evaluation script ``trec_eval`` to evaluate
+    the results.
+
     """
 
     def __init__(self, corpus, k=10):
