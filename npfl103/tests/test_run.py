@@ -49,7 +49,7 @@ def main(args):
     with open(outfile, 'w') as hdl:
         Similarity.write_trec(sc, sim, hdl, run_name='test_run')
 
-    # To evaluate
+    # To evaluate, use the trec_eval script.
 
 
     _end_time = time.clock()

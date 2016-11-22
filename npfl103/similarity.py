@@ -70,7 +70,8 @@ class Similarity:
     >>> Similarity.write_trec(sc, sim, hdl, run_name='test')
 
     Afterwards, use the TREC evaluation script ``trec_eval`` to evaluate
-    the results.
+    the results. (Of course, we would write to a file which is then
+    read by TREC.)
 
     """
 

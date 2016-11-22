@@ -1,0 +1,467 @@
+<DOC>
+<DOCID>MF-20020503338</DOCID>
+<DOCNO>MF-20020503338</DOCNO>
+<DATE>05/03/02</DATE>
+<TITLE>
+1	Průvodce	průvodce	NNMS1-----A----	0	ExD
+2	světem	svět	NNIS7-----A----	1	Atr
+3	financí	finance	NNFP2-----A----	2	Atr
+
+</TITLE>
+<HEADING>
+1	Inflace	inflace	NNFS1-----A----	2	Sb
+2	bude	být	VB-S---3F-AA---	0	Pred
+3	podle	podle-2	RR--2----------	2	AuxP
+4	odhadů	odhad	NNIP2-----A----	3	Adv
+5	nízká	nízký	AAFS1----1A----	8	Atr
+6	,	,	Z:-------------	8	Coord
+7	úrokové	úrokový	AAFP1----1A----	8	Atr
+8	sazby	sazba	NNFP1-----A----	4	Atr
+9	také	také_^(rovněž)	Db-------------	8	Atr
+
+</HEADING>
+<TEXT>
+1	Česká	Český-1_;G_^(používá_se_i_pro_jména_org.,_výrobků_atd.)	AAFS1----1A----	3	Atr
+2	národní	národní	AAFS1----1A----	3	Atr
+3	banka	banka	NNFS1-----A----	9	Sb
+4	na	na-1	RR--6----------	3	AuxP
+5	včerejším	včerejší	AANS6----1A----	6	Atr
+6	zasedání	zasedání_^(*3at)	NNNS6-----A----	4	Adv
+7	Bankovní	bankovní	AAFS2----1A----	8	Atr
+8	rady	rada-1_^(př._dát_někomu_dobrou_radu)	NNFS2-----A----	6	Atr
+9	projednala	projednat_:W	VpQW---XR-AA---	0	Pred
+10	svou	svůj-1_^(přivlast.)	P8FS4---------1	12	Atr
+11	aktuální	aktuální	AAFS4----1A----	12	Atr
+12	Zprávu	zpráva	NNFS4-----A----	9	Obj
+13	o	o-1	RR--6----------	12	AuxP
+14	inflaci	inflace	NNFS6-----A----	13	Atr
+15	.	.	Z:-------------	0	AuxK
+
+1	Ve	v-1	RV--6----------	10	AuxP
+2	svém	svůj-1_^(přivlast.)	P8ZS6----------	3	Atr
+3	pohledu	pohled	NNIS6-----A----	1	Adv
+4	na	na-1	RR--4----------	3	AuxP
+5	dosavadní	dosavadní	AAIS4----1A----	6	Atr
+6	a	a-1	J^-------------	8	Coord
+7	předpokládaný	předpokládaný_^(*2t)	AAIS4----1A----	6	Atr
+8	vývoj	vývoj	NNIS4-----A----	4	Atr
+9	inflace	inflace	NNFS2-----A----	8	Atr
+10	je	být	VB-S---3P-AA---	0	Pred
+11	centrální	centrální	AAFS1----1A----	12	Atr
+12	banka	banka	NNFS1-----A----	10	Sb
+13	velmi	velmi	Db-------------	14	Adv
+14	optimistická	optimistický	AAFS1----1A----	10	Pnom
+15	.	.	Z:-------------	0	AuxK
+
+1	V	v-1	RR--6----------	3	AuxP
+2	porovnání	porovnání_^(*3at)	NNNS6-----A----	3	AuxP
+3	s	s-1	RR--7----------	6	AuxP
+4	našimi	můj_^(přivlast.)	PSXP7-P1-------	5	Atr
+5	předpoklady	předpoklad	NNIP7-----A----	3	Atr
+6	jde	jít	VB-S---3P-AA---	0	Pred
+7	možná	možná_^(snad)	Db-------------	6	AuxY
+8	o	o-1	RR--4----------	6	AuxP
+9	optimismus	optimizmus	NNIS4-----A----	8	Obj
+10	až	až-3_^(až_k_...,_až_dost)	TT-------------	6	Coord
+11	přílišný	přílišný	AAIS1----1A----	10	ExD
+12	.	.	Z:-------------	0	AuxK
+
+1	Česká	Český-1_;G_^(používá_se_i_pro_jména_org.,_výrobků_atd.)	AAFS1----1A----	3	Atr
+2	národní	národní	AAFS1----1A----	3	Atr
+3	banka	banka	NNFS1-----A----	4	Sb
+4	předpokládá	předpokládat_:T	VB-S---3P-AA---	0	Pred
+5	,	,	Z:-------------	6	AuxX
+6	že	že	J,-------------	4	AuxC
+7	za	za-1	RR--4----------	15	AuxP
+8	rok	rok	NNIS4-----A----	7	Adv
+9	touto	tento	PDFS7----------	10	Atr
+10	dobou	doba	NNFS7-----A----	12	Pnom
+11	se	se_^(zvr._zájmeno/částice)	P7-X4----------	15	AuxT
+12	bude	být	VB-S---3F-AA---	15	AuxV
+13	meziroční	meziroční	AAFS1----1A----	14	Atr
+14	inflace	inflace	NNFS1-----A----	15	Sb
+15	pohybovat	pohybovat_:T	Vf--------A----	6	Obj
+16	v	v-1	RR--6----------	15	AuxP
+17	intervalu	interval	NNIS6-----A---1	16	Adv
+18	2	2	NNMS1-----A----	21	Atr
+19	,	,	Z:-------------	23	AuxX
+20	0	0	NNMS1-----A----	21	ExD
+21	-	-	Z:-------------	19	Coord
+22	3	3	NNMS1-----A----	21	Atr
+23	,	,	Z:-------------	17	Coord
+24	4	4	NNMS1-----A----	23	ExD
+25	procenta	procento	NNNS2-----A----	24	Atr
+26	.	.	Z:-------------	0	AuxK
+
+1	Jinými	jiný	AANP7----1A----	2	Atr
+2	slovy	slovo	NNNP7-----A----	0	ExD
+3	,	,	Z:-------------	4	AuxX
+4	že	že	J,-------------	2	AuxC
+5	v	v-1	RR--6----------	8	AuxP
+6	každém	každý	AAIS6----1A----	7	Atr
+7	případě	případ	NNIS6-----A----	5	Adv
+8	dojde	dojít	VB-S---3P-AA---	4	Sb
+9	k	k-1	RR--3----------	8	AuxP
+10	dalšímu	další	AANS3----1A----	11	Atr
+11	zlepšení	zlepšení_^(*3it)	NNNS3-----A----	9	Obj
+12	oproti	oproti	RR--3----------	11	AuxP
+13	nynějšímu	nynější	AAIS3----1A----	14	Atr
+14	stavu	stav	NNIS3-----A----	12	Adv
+15	.	.	Z:-------------	0	AuxK
+
+1	Naše	můj_^(přivlast.)	PSHS1-P1-------	2	Atr
+2	předpověď	předpověď	NNFS1-----A----	3	Sb
+3	je	být	VB-S---3P-AA---	7	Pred
+4	mírně	mírně_^(*1ý)	Dg-------1A----	5	Adv
+5	skeptičtější	skeptický	AAFP1----2A----	3	Pnom
+6	,	,	Z:-------------	7	AuxX
+7	ale	ale	J^-------------	0	Coord
+8	i	i-1	J^-------------	9	AuxZ
+9	tak	tak-3	Db-------------	10	Adv
+10	optimistická	optimistický	AAFS1----1A----	7	Pnom
+11	.	.	Z:-------------	0	AuxK
+
+1	Mírně	mírně_^(*1ý)	Dg-------1A----	2	Adv
+2	rušivým	rušivý	AAIS7----1A----	3	Atr
+3	mráčkem	mráček	NNIS7-----A----	8	Obj
+4	tohoto	tento	PDZS2----------	6	Atr
+5	nadějného	nadějný	AAIS2----1A----	6	Atr
+6	vývoje	vývoj	NNIS2-----A----	3	Atr
+7	však	však	J^-------------	0	Coord
+8	zůstávají	zůstávat_:T_^(*4at)	VB-P---3P-AA---	7	Pred
+9	veřejné	veřejný	AAFP1----1A----	10	Atr
+10	finance	finance	NNFP1-----A----	8	Sb
+11	.	.	Z:-------------	0	AuxK
+
+1	Schodek	schodek	NNIS1-----A----	13	Sb
+2	státního	státní	AAIS2----1A----	3	Atr
+3	rozpočtu	rozpočet	NNIS2-----A----	1	Atr
+4	za	za-1	RR--4----------	3	AuxP
+5	období	období	NNNS4-----A----	4	Atr
+6	prvních	první	CrIP2----------	8	Atr
+7	čtyř	čtyři`4	ClXP2----------	8	Atr
+8	měsíců	měsíc	NNIP2-----A----	5	Atr
+9	letošního	letošní	AAIS2----1A----	10	Atr
+10	roku	rok	NNIS2-----A---1	8	Atr
+11	se	se_^(zvr._zájmeno/částice)	P7-X4----------	13	AuxT
+12	totiž	totiž	Db-------------	13	AuxY
+13	přiblížil	přiblížit_:W	VpYS---XR-AA---	17	Pred
+14	42	42	C=-------------	15	Atr
+15	miliardám	miliarda`1000000000	NNFP3-----A----	13	Obj
+16	korun	koruna	NNFP2-----A----	15	Atr
+17	a	a-1	J^-------------	0	Coord
+18	může	moci_^(mít_možnost_[něco_dělat])	VB-S---3P-AA---	17	Pred
+19	představovat	představovat_:T	Vf--------A----	18	Obj
+20	problematický	problematický	AAIS4----1A----	21	Atr
+21	prvek	prvek	NNIS4-----A----	19	Obj
+22	ve	v-1	RV--6----------	24	AuxP
+23	vztahu	vztah	NNIS6-----A----	24	AuxP
+24	k	k-1	RR--3----------	19	AuxP
+25	zatím	zatím	Db-------------	26	Adv
+26	neutrální	neutrální	AAFS1----1A----	29	Atr
+27	,	,	Z:-------------	31	Coord
+28	snad	snad	Db-------------	27	ExD
+29	i	i-1	J^-------------	31	AuxZ
+30	mírně	mírně_^(*1ý)	Dg-------1A----	31	Adv
+31	expanzivní	expanzivní	AAFS1----1A----	33	Atr
+32	měnové	měnový	AAFS6----1A----	33	Atr
+33	politice	politika_^(věda)	NNFS6-----A----	24	Atr
+34	centrální	centrální	AAFS6----1A----	35	Atr
+35	banky	banka	NNFS2-----A----	33	Atr
+36	.	.	Z:-------------	0	AuxK
+
+1	Každopádně	každopádně	Db-------------	2	Adv
+2	lze	lze	VB-S---3P-AA---	0	Pred
+3	říci	říci	Vf--------A---1	2	Sb
+4	,	,	Z:-------------	5	AuxX
+5	že	že	J,-------------	3	AuxC
+6	příznivý	příznivý	AAIS1----1A----	8	Atr
+7	inflační	inflační	AAIS1----1A----	8	Atr
+8	vývoj	vývoj	NNIS1-----A----	9	Sb
+9	a	a-1	J^-------------	12	Coord
+10	inflační	inflační	AANP1----1A----	11	Atr
+11	očekávání	očekávání_^(*3at)	NNNP1-----A----	9	Sb
+12	jsou	být	VB-P---3P-AA---	5	Obj
+13	spojeny	spojit_:W	VsTP---XX-AP---	12	Pnom
+14	rovněž	rovněž	Db-------------	18	AuxZ
+15	s	s-1	RR--7----------	13	AuxP
+16	velmi	velmi	Db-------------	17	Adv
+17	nízkou	nízký	AAFS7----1A----	18	Atr
+18	úrovní	úroveň	NNFS7-----A----	15	Adv
+19	nominálních	nominální	AAFP2----1A----	21	Atr
+20	úrokových	úrokový	AAFP2----1A----	21	Atr
+21	sazeb	sazba	NNFP2-----A----	18	Atr
+22	.	.	Z:-------------	0	AuxK
+
+1	A	a-1	J^-------------	0	Coord
+2	současně	současně_^(*1ý)	Dg-------1A----	4	Adv
+3	lze	lze	VB-S---3P-AA---	1	Pred
+4	dodat	dodat_:W	Vf--------A----	3	Sb
+5	,	,	Z:-------------	6	AuxX
+6	že	že	J,-------------	4	AuxC
+7	pro	pro-1	RR--4----------	12	AuxP
+8	období	období	NNNS4-----A----	7	Adv
+9	nejbližšího	blízký	AAIS2----3A----	10	Atr
+10	půlroku	půlrok	NNIS6-----A----	8	Atr
+11	zřejmě	zřejmě_^(*1ý)	Dg-------1A----	12	AuxY
+12	nelze	lze	VB-S---3P-NA---	6	Obj
+13	očekávat	očekávat_:T	Vf--------A----	12	Sb
+14	nějaké	nějaký	PZNS4----------	16	Atr
+15	výrazné	výrazný	AANS4----1A----	16	Atr
+16	zvyšování	zvyšování_^(*3at)	NNNS4-----A----	13	Obj
+17	nominálních	nominální	AAFP2----1A----	19	Atr
+18	úrokových	úrokový	AAFP2----1A----	19	Atr
+19	sazeb	sazba	NNFP2-----A----	16	Atr
+20	.	.	Z:-------------	0	AuxK
+
+1	Tento	tento	PDIS4----------	2	Atr
+2	vývoj	vývoj	NNIS4-----A----	3	Obj
+3	vytváří	vytvářet_:T	VB-S---3P-AA---	0	Pred
+4	rovněž	rovněž	Db-------------	3	Adv
+5	parametry	parametr	NNIP4-----A----	3	Sb
+6	,	,	Z:-------------	10	AuxX
+7	z	z-1	RR--2----------	11	AuxP
+8	nichž	jenž_^(který_[ve_vedl.větě])	P9XP2----------	7	Atr
+9	se	se_^(zvr._zájmeno/částice)	P7-X4----------	11	AuxR
+10	budou	být	VB-P---3F-AA---	11	AuxV
+11	odvozovat	odvozovat_:T	Vf--------A----	5	Atr
+12	výnosy	výnos	NNIP4-----A----	11	Obj
+13	řady	řada_^(linka,zástup,pořadí,...)	NNFS2-----A----	12	Atr
+14	finančních	finanční	AAIP2----1A----	15	Atr
+15	produktů	produkt	NNIP2-----A----	13	Atr
+16	určených	určený_^(*3it)	AAIP2----1A----	15	Atr
+17	pro	pro-1	RR--4----------	16	AuxP
+18	individuální	individuální	AAMP4----1A----	19	Atr
+19	investory	investor	NNMP4-----A----	17	Adv
+20	.	.	Z:-------------	0	AuxK
+
+</TEXT>
+<HEADING>
+1	Menší	malý	AAFS1----2A----	2	Atr
+2	atraktivita	atraktivita	NNFS1-----A----	0	ExD
+3	vkladů	vklad	NNIP2-----A----	2	Atr
+
+</HEADING>
+<TEXT>
+1	Z	z-1	RR--2----------	5	AuxP
+2	momentálního	momentální	AAIS2----1A----	3	Atr
+3	stavu	stav	NNIS2-----A----	1	Adv
+4	lze	lze	VB-S---3P-AA---	0	Pred
+5	odvodit	odvodit_:W	Vf--------A----	4	Sb
+6	významná	významný	AANP1----1A----	7	Atr
+7	východiska	východisko	NNNP1-----A----	4	Sb
+8	pro	pro-1	RR--4----------	7	AuxP
+9	úvahy	úvaha	NNFP4-----A----	8	Atr
+10	,	,	Z:-------------	13	AuxX
+11	kterými	který	P4XP7----------	13	Adv
+12	se	se_^(zvr._zájmeno/částice)	P7-X4----------	13	AuxR
+13	řídí	řídit_:T	VB-S---3P-AA---	9	Atr
+14	individuální	individuální	AAMS1----1A----	16	Atr
+15	finanční	finanční	AAMP1----1A----	16	Atr
+16	investoři	investor	NNMP1-----A----	13	Sb
+17	.	.	Z:-------------	0	AuxK
+
+1	Nynější	nynější	AAFS1----1A----	2	Atr
+2	situace	situace	NNFS1-----A----	5	Sb
+3	za	za-1	RR--4----------	2	AuxP
+4	prvé	prvý	AANS4----1A----	3	Adv
+5	činí	činit_:T	VB-S---3P-AA---	0	Pred
+6	ještě	ještě	Db-------------	5	Adv
+7	méně	málo-3	Dg-------2A----	5	Adv
+8	atraktivními	atraktivní	AAFP7----1A----	9	Atr
+9	investice	investice	NNFP1-----A----	5	Obj
+10	do	do-1	RR--2----------	9	AuxP
+11	vkladových	vkladový	AAIP2----1A----	13	Atr
+12	bankovních	bankovní	AAIP2----1A----	13	Atr
+13	produktů	produkt	NNIP2-----A----	10	Atr
+14	,	,	Z:-------------	18	AuxX
+15	jejichž	jenž_^(který...[ve_vedl._větě])	P1XXXXP3-------	17	Atr
+16	reálný	reálný	AAIS1----1A----	17	Atr
+17	výnos	výnos	NNIS1-----A----	18	Sb
+18	zůstane	zůstat	VB-S---3P-AA---	13	Atr
+19	zřejmě	zřejmě_^(*1ý)	Dg-------1A----	18	AuxY
+20	i	i-1	J^-------------	23	AuxZ
+21	v	v-1	RR--6----------	18	AuxP
+22	delším	dlouhý-1_^(fyz._délka;_př._dlouhá_tyč)	AAIS6----2A----	23	Atr
+23	výhledu	výhled	NNIS6-----A----	21	Adv
+24	záporný	záporný	AAIS1----1A----	23	Atr
+25	.	.	Z:-------------	0	AuxK
+
+1	Za	za-1	RR--4----------	3	AuxP
+2	druhé	druhý-1_^(jiný)	AANS4----1A----	1	Obj
+3	vytváří	vytvářet_:T	VB-S---3P-AA---	0	Pred
+4	potřebu	potřeba	NNFS4-----A----	3	Obj
+5	nalézat	nalézat_:T	Vf--------A----	4	Atr
+6	alternativy	alternativa	NNFP4-----A----	5	Obj
+7	.	.	Z:-------------	0	AuxK
+
+</TEXT>
+<HEADING>
+1	Fondy	fond	NNIP1-----A----	2	Sb
+2	a	a-1	J^-------------	4	Coord
+3	půjčky	půjčka	NNFP1-----A----	2	Sb
+4	míří	mířit_:T_^(např._pistolí;_směřovat;_tvar_slovesa)	VB-P---3P-AA---	0	Pred
+5	vzhůru	vzhůru	Db-------------	4	Adv
+
+</HEADING>
+<TEXT>
+1	První	první	CrFS7----------	2	Atr
+2	alternativou	alternativa	NNFS7-----A----	3	Pnom
+3	jsou	být	VB-P---3P-AA---	0	Pred
+4	investice	investice	NNFP1-----A----	3	Sb
+5	do	do-1	RR--2----------	4	AuxP
+6	relativně	relativně_^(*1í)	Dg-------1A----	7	Adv
+7	jistých	jistý	AAIP2----1A----	9	Atr
+8	podílových	podílový	AAIP2----1A----	9	Atr
+9	fondů	fond	NNIP2-----A----	5	Adv
+10	,	,	Z:-------------	11	AuxX
+11	orientovaných	orientovaný_^(*2t)	AAIP2----1A----	9	Atr
+12	jak	jak-2	J,-------------	16	AuxY
+13	na	na-1	RR--4----------	11	AuxP
+14	dluhopisy	dluhopis	NNIP4-----A----	13	ExD
+15	,	,	Z:-------------	16	AuxX
+16	tak	tak-3	Db-------------	13	Coord
+17	(	(	Z:-------------	16	AuxG
+18	s	s-1	RR--7----------	20	AuxP
+19	ohledem	ohled	NNIS7-----A----	20	AuxP
+20	na	na-1	RR--4----------	15	AuxP
+21	předpokládané	předpokládaný_^(*2t)	AANS4----1A----	24	Atr
+22	celosvětové	celosvětový	AANS4----1A----	24	Atr
+23	ekonomické	ekonomický	AANS4----1A----	24	Atr
+24	oživení	oživení_^(*3it)	NNNS4-----A----	20	Atr
+25	)	)	Z:-------------	20	AuxG
+26	na	na-1	RR--4----------	24	AuxP
+27	akcie	akcie	NNFP4-----A----	26	Obj
+28	.	.	Z:-------------	0	AuxK
+
+1	Druhou	druhý-1_^(jiný)	AAFS7----1A----	2	Atr
+2	alternativou	alternativa	NNFS7-----A----	3	Pnom
+3	jsou	být	VB-P---3P-AA---	0	Pred
+4	úvěrové	úvěrový	AAIP1----1A----	5	Atr
+5	produkty	produkt	NNIP1-----A----	6	Sb
+6	a	a-1	J^-------------	3	Coord
+7	půjčky	půjčka	NNFP1-----A----	6	Sb
+8	,	,	Z:-------------	9	AuxX
+9	zaměřené	zaměřený_^(*3it)	AAFP4----1A----	7	Atr
+10	na	na-1	RR--6----------	9	AuxP
+11	bydlení	bydlení_^(*2t)	NNNS6-----A----	10	Adv
+12	,	,	Z:-------------	13	AuxX
+13	případně	případně_^(*1ý)	Dg-------1A----	9	Coord
+14	na	na-1	RR--4----------	13	AuxP
+15	nákup	nákup	NNIS4-----A----	14	Adv
+16	zboží	zboží	NNNS2-----A----	15	Atr
+17	dlouhodobé	dlouhodobý	AAFS2----1A----	18	Atr
+18	spotřeby	spotřeba	NNFS2-----A----	16	Atr
+19	.	.	Z:-------------	0	AuxK
+
+1	Za	za-1	RR--4----------	4	AuxP
+2	třetí	třetí	CrFS4----------	1	Adv
+3	se	se_^(zvr._zájmeno/částice)	P7-X4----------	4	AuxT
+4	mění	měnit_:T	VB-S---3P-AA---	0	Pred
+5	vztah	vztah	NNIS4-----A----	4	Obj
+6	mezi	mezi-1	RR--7----------	5	AuxP
+7	sklonem	sklon	NNIS7-----A----	14	Atr
+8	k	k-1	RR--3----------	7	AuxP
+9	úsporám	úspora	NNFP3-----A----	8	Atr
+10	uloženým	uložený_^(*3it)	AANS7----1A----	11	Atr
+11	prostřednictvím	prostřednictví	NNNS7-----A----	14	Adv
+12	bankovních	bankovní	AAIP2----1A----	13	Atr
+13	produktů	produkt	NNIP2-----A----	11	Adv
+14	a	a-1	J^-------------	6	Coord
+15	sklonem	sklon	NNIS7-----A----	14	Adv
+16	ke	k-1	RV--3----------	15	AuxP
+17	spotřebě	spotřeba	NNFS3-----A----	16	Atr
+18	.	.	Z:-------------	0	AuxK
+
+1	Dané	daný	AANS1----1A----	3	Atr
+2	měnové	měnový	AANS1----1A----	3	Atr
+3	prostředí	prostředí	NNNS1-----A----	4	Sb
+4	vede	vést-1	VB-S---3P-AA---	0	Pred
+5	k	k-1	RR--3----------	4	AuxP
+6	relativní	relativní	AAFS3----1A----	7	Atr
+7	atraktivnosti	atraktivnost	NNFS3-----A----	5	Obj
+8	uvážlivé	uvážlivý	AAFS2----1A----	9	Atr
+9	spotřeby	spotřeba	NNFS2-----A----	7	Atr
+10	.	.	Z:-------------	0	AuxK
+
+1	První	první	CrFS7----------	2	Atr
+2	alternativou	alternativa	NNFS7-----A----	3	Pnom
+3	jsou	být	VB-P---3P-AA---	0	Pred
+4	investice	investice	NNFP1-----A----	3	Sb
+5	do	do-1	RR--2----------	4	AuxP
+6	relativně	relativně_^(*1í)	Dg-------1A----	7	Adv
+7	jistých	jistý	AAIP2----1A----	9	Atr
+8	podílových	podílový	AAIP2----1A----	9	Atr
+9	fondů	fond	NNIP2-----A----	5	Adv
+10	,	,	Z:-------------	11	AuxX
+11	orientovaných	orientovaný_^(*2t)	AAIP2----1A----	9	Atr
+12	jak	jak-2	J,-------------	16	AuxY
+13	na	na-1	RR--4----------	11	AuxP
+14	dluhopisy	dluhopis	NNIP4-----A----	13	ExD
+15	,	,	Z:-------------	16	AuxX
+16	tak	tak-3	Db-------------	13	Coord
+17	(	(	Z:-------------	16	AuxG
+18	s	s-1	RR--7----------	20	AuxP
+19	ohledem	ohled	NNIS7-----A----	20	AuxP
+20	na	na-1	RR--4----------	15	AuxP
+21	předpokládané	předpokládaný_^(*2t)	AANS4----1A----	24	Atr
+22	celosvětové	celosvětový	AANS4----1A----	24	Atr
+23	ekonomické	ekonomický	AANS4----1A----	24	Atr
+24	oživení	oživení_^(*3it)	NNNS4-----A----	20	Atr
+25	)	)	Z:-------------	20	AuxG
+26	na	na-1	RR--4----------	24	AuxP
+27	akcie	akcie	NNFP4-----A----	26	Obj
+28	.	.	Z:-------------	0	AuxK
+
+1	Druhou	druhý-1_^(jiný)	AAFS7----1A----	2	Atr
+2	alternativou	alternativa	NNFS7-----A----	3	Pnom
+3	jsou	být	VB-P---3P-AA---	0	Pred
+4	úvěrové	úvěrový	AAIP1----1A----	5	Atr
+5	produkty	produkt	NNIP1-----A----	6	Sb
+6	a	a-1	J^-------------	3	Coord
+7	půjčky	půjčka	NNFP1-----A----	6	Sb
+8	,	,	Z:-------------	9	AuxX
+9	zaměřené	zaměřený_^(*3it)	AAFP4----1A----	7	Atr
+10	na	na-1	RR--6----------	9	AuxP
+11	bydlení	bydlení_^(*2t)	NNNS6-----A----	10	Adv
+12	,	,	Z:-------------	13	AuxX
+13	případně	případně_^(*1ý)	Dg-------1A----	9	Coord
+14	na	na-1	RR--4----------	13	AuxP
+15	nákup	nákup	NNIS4-----A----	14	Adv
+16	zboží	zboží	NNNS2-----A----	15	Atr
+17	dlouhodobé	dlouhodobý	AAFS2----1A----	18	Atr
+18	spotřeby	spotřeba	NNFS2-----A----	16	Atr
+19	.	.	Z:-------------	0	AuxK
+
+1	Za	za-1	RR--4----------	4	AuxP
+2	třetí	třetí	CrFS4----------	1	Adv
+3	se	se_^(zvr._zájmeno/částice)	P7-X4----------	4	AuxT
+4	mění	měnit_:T	VB-S---3P-AA---	0	Pred
+5	vztah	vztah	NNIS4-----A----	4	Obj
+6	mezi	mezi-1	RR--7----------	5	AuxP
+7	sklonem	sklon	NNIS7-----A----	14	Atr
+8	k	k-1	RR--3----------	7	AuxP
+9	úsporám	úspora	NNFP3-----A----	8	Atr
+10	uloženým	uložený_^(*3it)	AANS7----1A----	11	Atr
+11	prostřednictvím	prostřednictví	NNNS7-----A----	14	Adv
+12	bankovních	bankovní	AAIP2----1A----	13	Atr
+13	produktů	produkt	NNIP2-----A----	11	Adv
+14	a	a-1	J^-------------	6	Coord
+15	sklonem	sklon	NNIS7-----A----	14	Adv
+16	ke	k-1	RV--3----------	15	AuxP
+17	spotřebě	spotřeba	NNFS3-----A----	16	Atr
+18	.	.	Z:-------------	0	AuxK
+
+1	Dané	daný	AANS1----1A----	3	Atr
+2	měnové	měnový	AANS1----1A----	3	Atr
+3	prostředí	prostředí	NNNS1-----A----	4	Sb
+4	vede	vést-1	VB-S---3P-AA---	0	Pred
+5	k	k-1	RR--3----------	4	AuxP
+6	relativní	relativní	AAFS3----1A----	7	Atr
+7	atraktivnosti	atraktivnost	NNFS3-----A----	5	Obj
+8	uvážlivé	uvážlivý	AAFS2----1A----	9	Atr
+9	spotřeby	spotřeba	NNFS2-----A----	7	Atr
+10	.	.	Z:-------------	0	AuxK
+
+</TEXT>
+</DOC>

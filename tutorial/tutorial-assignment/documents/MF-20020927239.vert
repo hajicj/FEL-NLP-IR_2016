@@ -1,0 +1,275 @@
+<DOC>
+<DOCID>MF-20020927239</DOCID>
+<DOCNO>MF-20020927239</DOCNO>
+<DATE>09/27/02</DATE>
+<TITLE>
+1	Na	na-1	RR--4----------	4	AuxP
+2	střídavý	střídavý	AAIS4----1A----	3	Atr
+3	start	start	NNIS4-----A----	1	Adv
+4	přijde	přijít	VB-S---3P-AA---	0	Pred
+5	Hořava	Hořava_;S	NNMS1-----A----	4	Sb
+
+</TITLE>
+<TEXT>
+1	Karlovy	Karlův_;Y_^(*3el)	AUIP1M---------	2	Atr
+2	Vary	Vary_;G_^(Karlovy_Vary)	NNIP1-----A----	0	ExD
+3	-	-	Z:-------------	15	Apos
+4	Nová	nový	AAFS1----1A----	5	Atr
+5	tvář	tvář	NNFS1-----A----	15	Sb
+6	v	v-1	RR--6----------	5	AuxP
+7	sestavě	sestava	NNFS6-----A----	6	Atr
+8	karlovarského	karlovarský	AAIS2----1A----	10	Atr
+9	hokejového	hokejový	AAIS2----1A----	10	Atr
+10	týmu	tým	NNIS2-----A----	7	Atr
+11	se	se_^(zvr._zájmeno/částice)	P7-X4----------	15	AuxT
+12	s	s-1	RR--7----------	15	AuxP
+13	největší	velký	AAFS7----3A----	14	Atr
+14	pravděpodobností	pravděpodobnost_^(*3ý)	NNFS7-----A----	12	Adv
+15	objeví	objevit_:W	VB-S---3P-AA---	2	Atr
+16	v	v-1	RR--6----------	15	AuxP
+17	nedělním	nedělní	AANS6----1A----	18	Atr
+18	derby	derby	NNNXX-----A----	16	Adv
+19	v	v-1	RR--6----------	18	AuxP
+20	Plzni	Plzeň_;G	NNFS6-----A----	19	Atr
+21	.	.	Z:-------------	0	AuxK
+
+1	Na	na-1	RR--6----------	8	AuxP
+2	střídavém	střídavý	AAIS6----1A----	3	Atr
+3	startu	start	NNIS6-----A----	1	Adv
+4	útočníka	útočník	NNMS2-----A----	6	Atr
+5	Miloslava	Miloslav_;Y	NNMS2-----A----	6	Atr
+6	Hořavy	Hořava_;S	NNMS2-----A----	3	Atr
+7	se	se_^(zvr._zájmeno/částice)	P7-X4----------	8	AuxT
+8	domluvila	domluvit_:W	VpQW---XR-AA---	0	Pred
+9	vedení	vedení	NNNS1-----A----	8	Sb
+10	Energie	energie	NNFS2-----A----	9	Atr
+11	Karlovy	Karlův_;Y_^(*3el)	AUFS2M---------	12	Atr
+12	Vary	Vara_;G	NNFS2-----A----	13	Atr
+13	a	a-1	J^-------------	10	Coord
+14	prvoligového	prvoligový	AAIS2----1A----	15	Atr
+15	Vagnerplastu	Vagnerplas	NNNS2-----A----	13	Atr
+16	Kladno	Kladno_;G	NNNS1-----A----	15	Atr
+17	.	.	Z:-------------	0	AuxK
+
+1	"	"	Z:-------------	6	AuxG
+2	Někdo	někdo	PZM-1----------	6	Sb
+3	od	od-1	RR--2----------	6	AuxP
+4	nás	já	PP-P2--1-------	3	Adv
+5	zase	zase	Db-------------	6	Adv
+6	poputuje	poputovat_:W	VB-S---3P-AA---	10	Pred
+7	opačným	opačný	AAIS7----1A----	8	Atr
+8	směrem	směr	NNIS7-----A----	6	Adv
+9	,	,	Z:-------------	10	AuxX
+10	ale	ale	J^-------------	12	Coord
+11	konkrétní	konkrétní	AANS1----1A----	12	Atr
+12	jména	jméno	NNNS2-----A----	14	Sb
+13	ještě	ještě	Db-------------	14	Adv
+14	nepadla	padnout_:W	VpQW---XR-NA--1	17	Obj
+15	,	,	Z:-------------	14	AuxX
+16	"	"	Z:-------------	10	AuxG
+17	sdělil	sdělit_:W	VpYS---XR-AA---	0	Pred
+18	generální	generální	AAMS1----1A----	19	Atr
+19	manažer	manažer	NNMS1-----A----	22	Atr
+20	Energie	energie	NNFS2-----A----	19	Atr
+21	Miroslav	Miroslav_;G_;Y	NNMS1-----A----	22	Atr
+22	Vaněk	Vaněk_;S	NNMS1-----A----	17	Sb
+23	.	.	Z:-------------	0	AuxK
+
+1	Druhým	druhý-2	CrMS7----------	2	Atr
+2	hokejistou	hokejista	NNMS7-----A----	15	Pnom
+3	,	,	Z:-------------	13	AuxX
+4	jehož	jenž_^(který_[ve_vedl.větě])	PJZS2----------	5	Atr
+5	jméno	jméno	NNNS4-----A----	15	Sb
+6	se	se_^(zvr._zájmeno/částice)	P7-X4----------	13	AuxT
+7	v	v-1	RR--6----------	9	AuxP
+8	souvislosti	souvislost_^(*3ý)	NNFS6-----A----	9	AuxP
+9	s	s-1	RR--7----------	13	AuxP
+10	oživením	oživení_^(*3it)	NNNS7-----A----	9	Adv
+11	karlovarské	karlovarský	AAFS2----1A----	12	Atr
+12	sestavy	sestava	NNFS2-----A----	10	Atr
+13	skloňovalo	skloňovat_:T	VpNS---XR-AA---	2	Atr
+14	,	,	Z:-------------	13	AuxX
+15	je	být	VB-S---3P-AA---	0	Pred
+16	kadaňský	kadaňský	AAMS1----1A----	17	Atr
+17	obránce	obránce	NNMS1-----A----	19	Atr
+18	Martin	Martin-1_;Y	NNMS1-----A----	19	Atr
+19	Kivoň	Kivoň	NNMS1-----A----	15	Sb
+20	.	.	Z:-------------	0	AuxK
+
+1	Jenže	jenže	J^-------------	0	Coord
+2	ten	ten	PDYS1----------	7	Sb
+3	se	se_^(zvr._zájmeno/částice)	P7-X4----------	8	AuxT
+4	v	v-1	RR--6----------	7	AuxP
+5	Karlových	Karlův_;Y_^(*3el)	AUIP6M---------	6	Atr
+6	Varech	Vary_;G_^(Karlovy_Vary)	NNIP6-----A----	4	Adv
+7	může	moci_^(mít_možnost_[něco_dělat])	VB-S---3P-AA---	1	Pred
+8	objevit	objevit_:W	Vf--------A----	7	Obj
+9	mnohem	mnohem	Db-------------	10	Adv
+10	později	pozdě	Dg-------2A----	8	Adv
+11	.	.	Z:-------------	0	AuxK
+
+1	"	"	Z:-------------	6	AuxG
+2	Oddíl	oddíl	NNIS1-----A----	4	Sb
+3	ho	on-1	PHZS4--3-------	5	Obj
+4	nechce	chtít	VB-S---3P-NA---	0	Pred
+5	pustit	pustit_:W	Vf--------A----	4	Obj
+6	,	,	Z:-------------	4	AuxX
+7	je	být	VB-S---3P-AA---	6	Pred
+8	to	ten	PDNS1----------	7	Sb
+9	nejlepší	dobrý	AAMS1----3A----	10	Atr
+10	obránce	obránce	NNMS1-----A----	7	Pnom
+11	.	.	Z:-------------	0	AuxK
+
+1	Navíc	navíc	Db-------------	4	Adv
+2	teď	teď	Db-------------	4	Adv
+3	Kadaň	Kadaň_;G	NNFS1-----A----	4	Sb
+4	prohrála	prohrát	VpQW---XR-AA---	0	Pred
+5	doma	doma	Db-------------	4	Adv
+6	,	,	Z:-------------	7	AuxX
+7	takže	takže	J,-------------	4	AuxC
+8	jednání	jednání_^(*3at)	NNNS1-----A----	9	Sb
+9	nejsou	být	VB-P---3P-NA---	7	Adv
+10	jednoduchá	jednoduchý	AANP1----1A----	9	Pnom
+11	.	.	Z:-------------	0	AuxK
+
+1	Jsme	být	VB-P---1P-AA---	2	Pred
+2	však	však	J^-------------	0	Coord
+3	s	s-1	RR--7----------	1	AuxP
+4	Kivoněm	Kivoněm	NNFXX-----A----	3	Atr
+5	domluvení	domluvení_^(*3it)	NNNS2-----A----	4	Atr
+6	tak	tak-3	Db-------------	1	Adv
+7	,	,	Z:-------------	8	AuxX
+8	že	že	J,-------------	3	AuxC
+9	1	1	NNMS1-----A----	5	Atv
+10	.	.	Z:-------------	0	AuxK
+
+1	května	květen	NNIS2-----A----	4	Sb
+2	příštího	příští	AAIS2----1A----	3	Atr
+3	roku	rok	NNIS2-----A---1	1	Atr
+4	bude	být	VB-S---3F-AA---	9	AuxV
+5	naším	můj_^(přivlast.)	PSZS7-P1-------	6	Atr
+6	hráčem	hráč	NNMS7-----A----	4	Pnom
+7	,	,	Z:-------------	4	AuxX
+8	"	"	Z:-------------	9	AuxG
+9	naznačil	naznačit_:W	VpYS---XR-AA---	0	Pred
+10	Vaněk	Vaněk_;S	NNFXX-----A---8	9	Sb
+11	.	.	Z:-------------	0	AuxK
+
+1	Ten	ten	PDYS1----------	3	Sb
+2	zároveň	zároveň	Db-------------	3	Adv
+3	prozradil	prozradit_:W	VpYS---XR-AA---	0	Pred
+4	,	,	Z:-------------	5	AuxX
+5	že	že	J,-------------	3	AuxC
+6	někteří	některý	PZMP1----------	7	Atr
+7	hráči	hráč	NNMP1-----A----	11	Sb
+8	současného	současný	AAIS2----1A----	9	Atr
+9	kádru	kádr	NNIS2-----A----	7	Atr
+10	Energie	energie	NNFS2-----A----	9	Atr
+11	dostali	dostat	VpMP---XR-AA---	5	Obj
+12	v	v-1	RR--6----------	14	AuxP
+13	souvislosti	souvislost_^(*3ý)	NNFS6-----A----	14	AuxP
+14	se	s-1	RV--7----------	11	AuxP
+15	špatnými	špatný	AAIP7----1A----	16	Atr
+16	výkony	výkon	NNIP7-----A----	14	Atr
+17	Energie	energie	NNFS2-----A----	16	Atr
+18	v	v-1	RR--6----------	17	AuxP
+19	letošní	letošní	AAFS6----1A----	20	Atr
+20	sezoně	sezóna	NNFS6-----A----	18	Atr
+21	jakési	jakýsi	PZFS6----------	23	Atr
+22	první	první	CrNS4----------	23	Atr
+23	varování	varování_^(*3at)	NNNS6-----A----	20	Atr
+24	.	.	Z:-------------	0	AuxK
+
+1	"	"	Z:-------------	2	AuxG
+2	Jde	jít	VB-S---3P-AA---	0	Pred
+3	o	o-1	RR--4----------	2	AuxP
+4	šest	šest`6	Cn-S4----------	5	Obj
+5	či	či	J^-------------	3	Coord
+6	sedm	sedm`7	Cn-S4----------	5	Obj
+7	hokejistů	hokejista	NNMP2-----A----	5	Atr
+8	.	.	Z:-------------	0	AuxK
+
+1	Ty	ten	PDIP4----------	3	Obj
+2	jsme	být	VB-P---1P-AA---	3	AuxV
+3	upozornili	upozornit_:W	VpMP---XR-AA---	0	Pred
+4	,	,	Z:-------------	5	AuxX
+5	že	že	J,-------------	3	AuxC
+6	pokud	pokud	J,-------------	11	AuxC
+7	nenapraví	napravit_:W	VB-S---3P-NA---	6	Adv
+8	své	svůj-1_^(přivlast.)	P8NS4---------1	9	Atr
+9	působení	působení_^(*3it)	NNNS4-----A----	7	Obj
+10	,	,	Z:-------------	6	AuxX
+11	podíváme	podívat_:W	VB-P---1P-AA---	5	Obj
+12	se	se_^(zvr._zájmeno/částice)	P7-X4----------	11	AuxT
+13	na	na-1	RR--4----------	11	AuxP
+14	jejich	jeho_^(přivlast.)	PSXXXXP3-------	15	Atr
+15	příjmy	příjem	NNIP4-----A----	13	Obj
+16	.	.	Z:-------------	0	AuxK
+
+1	Kdyby	kdyby	J,-------------	8	AuxC
+2	to	ten	PDNS1----------	3	Sb
+3	nepomohlo	pomoci	VpNS---XR-NA---	1	Adv
+4	,	,	Z:-------------	1	AuxX
+5	také	také_^(rovněž)	Db-------------	8	Adv
+6	by	být	Vc-------------	8	AuxV
+7	se	se_^(zvr._zájmeno/částice)	P7-X4----------	9	AuxT
+8	mohlo	moci_^(mít_možnost_[něco_dělat])	VpNS---XR-AA---	0	Pred
+9	stát	stát-1_^(státní_útvar)	NNIS1-----A----	8	Obj
+10	,	,	Z:-------------	11	AuxX
+11	že	že	J,-------------	8	AuxC
+12	nastoupí	nastoupit_:W	VB-S---3P-AA---	11	Obj
+13	v	v-1	RR--6----------	12	AuxP
+14	jiném	jiný	AAIS6----1A----	15	Atr
+15	týmu	tým	NNIS6-----A----	13	Adv
+16	.	.	Z:-------------	0	AuxK
+
+1	Očekáváme	očekávat_:T	VB-P---1P-AA---	0	Pred
+2	,	,	Z:-------------	3	AuxX
+3	že	že	J,-------------	1	AuxC
+4	se	se_^(zvr._zájmeno/částice)	P7-X4----------	7	AuxT
+5	ti	ten	PDMP1----------	6	Atr
+6	hráči	hráč	NNMP1-----A----	7	Sb
+7	zlepší	zlepšit_:W	VB-P---3P-AA---	3	Obj
+8	.	.	Z:-------------	0	AuxK
+
+1	"	"	Z:-------------	4	AuxG
+2	Od	od-1	RR--2----------	4	AuxP
+3	včerejška	včerejšek	NNIS2-----A----	2	Adv
+4	je	být	VB-S---3P-AA---	6	Pred
+5	jasné	jasný	AANS1----1A----	4	Pnom
+6	,	,	Z:-------------	0	Coord
+7	které	který	P4NS1----------	10	Obj
+8	extraligové	extraligový	AANS1----1A----	9	Atr
+9	utkání	utkání_^(*3at)	NNNS1-----A----	10	Obj
+10	odehraje	odehrát	VB-S---3P-AA---	6	Pred
+11	Energie	energie	NNFS1-----A----	10	Obj
+12	v	v-1	RR--6----------	10	AuxP
+13	Sokolově	Sokolov_;G	NNIS6-----A----	12	Atr
+14	,	,	Z:-------------	16	AuxX
+15	jak	jak-3	Db-------------	16	Adv
+16	slíbila	slíbit_:W	VpQW---XR-AA---	13	Atr
+17	.	.	Z:-------------	0	AuxK
+
+1	"	"	Z:-------------	3	AuxG
+2	Dvanáctého	dvanáctý	CrIS2----------	3	Atr
+3	ledna	leden	NNIS2-----A----	6	Adv
+4	od	od-1	RR--2----------	3	AuxP
+5	17	17	C=-------------	6	Adv
+6	:	:	Z:-------------	0	Coord
+7	30	30	C=-------------	6	Adv
+8	hodin	hodina_^(jednotka_času)	NNFP2-----A----	4	Atr
+9	tam	tam	Db-------------	11	Adv
+10	budeme	být	VB-P---1F-AA---	11	AuxV
+11	hrát	hrát	Vf--------A----	17	Obj
+12	se	s-1	RV--7----------	11	AuxP
+13	Spartou	Sparta_;K	NNFS7-----A----	12	Obj
+14	Praha	Praha_;G	NNFS1-----A----	13	Atr
+15	,	,	Z:-------------	11	AuxX
+16	"	"	Z:-------------	6	AuxG
+17	oznámil	oznámit_:W	VpYS---XR-AA---	6	Pred
+18	Miroslav	Miroslav_;G_;Y	NNMS1-----A----	19	Atr
+19	Vaněk	Vaněk_;S	NNMS1-----A----	17	Sb
+20	.	.	Z:-------------	0	AuxK
+
+</TEXT>
+</DOC>
