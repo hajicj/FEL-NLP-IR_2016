@@ -131,5 +131,5 @@ class Similarity:
                                   doc_collection=doc_collection,
                                   run_name=run_name)
             stream.write(s)
-            logging.warning('Wrote\n{0}\nto stream'.format(s))
+            # logging.warning('Wrote\n{0}\nto stream'.format(s))
             stream.write('\n')

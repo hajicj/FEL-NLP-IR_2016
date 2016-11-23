@@ -29,5 +29,7 @@ Note that we assume you have already downloaded the assignment `*.tgz` package t
 the evaluation script. Although the `tutorial/tutorial-assignment` directory copies the structure
 of the assignment package (with just a few files, so that you don't have to wait for anything),
 the evaluation was left out -- you're going to need it in the assignment itself anyway, so
-why compile it twice? The tutorial Notebook describes how to set paths/env vars to make
-evaluation work for the tutorial.
+why compile it twice?
+
+The tutorial assumes you've successfully compiled the `trec_eval` script
+in the `npfl103/eval` directory.

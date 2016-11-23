@@ -9,7 +9,7 @@ __version__ = "0.0.1"
 __author__ = "Jan Hajic jr."
 
 
-class TransformCorpus(object):
+class TransformCorpus:
     """The TransformedCollection class is the building block
     of vector space transformation pipelines. On initialization,
     supply a callable that takes a sparse vector in __call__ and outputs
