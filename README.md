@@ -23,7 +23,8 @@ There is an Ipython Notebook file that provides a tutorial:
 
 `tutorial/tutorial.ipynb`
 
-Fire up Jupyter and go through the tutorial to learn the basics. It should take about 15 minutes.
+Fire up Jupyter and go through the tutorial to learn the basics. It should take about 20 minutes.
+If you do not have Jupyter, you can read the HTML version (`tutorial/tutorial.html`).
 
 Note that we assume you have already downloaded the assignment `*.tgz` package that contains
 the evaluation script. Although the `tutorial/tutorial-assignment` directory copies the structure
