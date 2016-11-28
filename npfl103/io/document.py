@@ -209,7 +209,7 @@ class DocumentBase:
             elif otag is None and ctag is not None:
                 if len(c_open_tag_stack) < 1:
                     if ctag == 'CZE':
-                        logging.warning('Line {0}: parasitic closing tag CZE found,'
+                        logging.debug('Line {0}: parasitic closing tag CZE found,'
                                         ' ignoring it.'.format(lno))
                         continue
                     raise ValueError('Line {0}: closing tag {1} without being'
