@@ -1,5 +1,8 @@
 from __future__ import print_function, unicode_literals
-from setuptools import setup
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils import setup
 
 setup(
     name='npfl103',
