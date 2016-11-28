@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """This module implements retrieval evaluation functions."""
 from __future__ import print_function, unicode_literals
 

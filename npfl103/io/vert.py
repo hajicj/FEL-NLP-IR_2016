@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """This module deals with the vertical text format."""
 from __future__ import print_function, unicode_literals
 import io

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import operator
 
 from npfl103.io.vert import VText, VToken

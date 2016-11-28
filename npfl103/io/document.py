@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """This module implements a class that represents one document
 from the collection."""
 from __future__ import print_function, unicode_literals
