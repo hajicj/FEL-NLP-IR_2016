@@ -2,7 +2,7 @@ from __future__ import print_function, unicode_literals
 try:
     from setuptools import setup
 except ImportError:
-    from distutils import setup
+    from distutils.core import setup
 
 setup(
     name='npfl103',
