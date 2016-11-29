@@ -139,9 +139,10 @@ def main(args):
     if os.path.exists(args.output):
         logging.warn('Will overwrite output file!')
 
-    with open(args.output, 'w'):
+    with open(args.output, 'w') as output_stream:
         Similarity.write_trec(sim_corpus=query_similarity_corpus,
                               similarity=similarity_transform,
+                              stream=output_stream,
                               run_name=args.run_name)
 
     ###########################################################################

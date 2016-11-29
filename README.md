@@ -10,10 +10,12 @@ Installation
 
 We assume you have the latest Python version (3.5.2).
 
-(If you don't, get it from Anaconnda!
+(If you don't, get it from Anaconda!
+
 It's a great distribution that can be installed fully locally (no sudo permission needed),
 ready with numpy and scipy and the whole scientific computing stack. Also, it provides
-virtual environments through the `conda` tool, which is very much recommended practice.)
+virtual environments through the `conda` tool, which is very much recommended practice.
+Actually, we're pretty certain you should get familiar with Anaconda anyway, at some point.)
 
 Make sure that your locale is set to support UTF-8.
 
@@ -52,8 +54,17 @@ Inside the repository, but not inside the `npfl103` package, is a script called
 `search.py`. It's your to play around with and modify. (We strongly suggest
 putting it into a repository of your own and making multiple copies, according
 to experimental configurations.) It's basically this tutorial in script form.
-Comments inside the file should help you get going.
+Comments inside the file should help you get going. Help for command-line
+argument is available with:
+
+    python search.py -h
+
+A basic test to see if everything is working properly is to run the following
+(from the directory where this README sits):
+
+     python search.py -r tutorial/tutorial-assignment -d documents.list -t topics.list -q qrels.txt -o tutorial-output.dat -n test_run
 
 (Don't forget to set execute permissions for `search.py` & its derivatives...)
 
 Happy hacking!
+==============
