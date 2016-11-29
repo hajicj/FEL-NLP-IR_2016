@@ -297,6 +297,11 @@ pprint.pprint([q for q in results])
 pprint.pprint(results['10.2452/401-AH'])
 
 
+# ## What's next?
 # 
+# Inside the repository, but not inside the `npfl103` package, is a script called `search.py`. 
+# It's your to play around with and modify. (We strongly suggest putting it into a repository of your own
+# and make multiple copies, according to experimental configurations.) It's basically this tutorial in script
+# form. Comments inside the file should help you get going.
 
 # # Happy hacking.
