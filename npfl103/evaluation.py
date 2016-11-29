@@ -54,7 +54,6 @@ def do_eval(truth_file, prediction_file, results_by_query=False):
     args = [EVAL_EXEC] + TREC_EVAL_ARGS + [truth_file, prediction_file]
     result = subprocess.run(args, stdout=subprocess.PIPE)
     result_str = result.stdout.decode('utf-8')
-    print(result_str)
 
     # Parsing results
     results_dict = collections.OrderedDict()

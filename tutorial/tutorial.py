@@ -16,7 +16,7 @@
 # Note that the Python classes you're supposed to use have documentation inside, with quite detailed examples.
 # We don't cover all of that here -- the tutorial focuses on how the library fits together.
 
-# In[ ]:
+# In[1]:
 
 import npfl103
 
@@ -25,7 +25,7 @@ import npfl103
 # 
 # The data for the tutorial lives in the `tutorial_assignment` subfolder. It mirrors the assignment folder in structure and file types.
 
-# In[ ]:
+# In[2]:
 
 import os
 
@@ -42,7 +42,7 @@ qlist = os.path.join(dpath, 'topics.list')
 # 
 # The main entry point to data loading is the `Collection` class. Initialize it with the `documents.list` (or `topics.list`) file:
 
-# In[ ]:
+# In[3]:
 
 from npfl103.io import Collection
 
@@ -55,7 +55,7 @@ coll_docs = Collection(dlist)
 # 
 # A Collection consists of individual documents. There are two implemented document types: the `Document` class from `npfl103.io`, and the `Topic` class. Collections are by default created as collections of `Document`s; however, for reading the queries, we use the same Collection mechanism and explicitly supply the `Topic` class.
 
-# In[ ]:
+# In[4]:
 
 from npfl103.io import Topic
 coll_queries = Collection(qlist, document_cls=Topic)
@@ -69,7 +69,7 @@ coll_queries = Collection(qlist, document_cls=Topic)
 # 
 # To run a vector space information retrieval experiment, we now have to convert the loaded representations of documents and queries into a vector space. For this, we provide the `Vectorizer` classes.
 
-# In[ ]:
+# In[5]:
 
 from npfl103.io import BinaryVectorizer, TermFrequencyVectorizer
 
@@ -85,14 +85,14 @@ from npfl103.io import BinaryVectorizer, TermFrequencyVectorizer
 
 # Let's build a term frequency vectorizer that iterates over lemmas.
 
-# In[ ]:
+# In[6]:
 
 vectorizer = TermFrequencyVectorizer(field='lemma')
 
 
 # The vectorizer provides a `transform` method that does the processing.
 
-# In[ ]:
+# In[7]:
 
 vdocs = (vectorizer.transform(d) for d in coll_docs)
 
@@ -118,24 +118,24 @@ vdocs = (vectorizer.transform(d) for d in coll_docs)
 # 
 # The token filter argument is a function that returns True or False when called with a `VToken` object. This enables filtering out tokens based on a different field than the one used to build the vector space. For instance, the aforementioned content word filtering would be iplemented as:
 
-# In[ ]:
+# In[8]:
 
 cw_vectorizer = TermFrequencyVectorizer(field='lemma', token_filter=lambda t: t.pos in 'NADV')
 
 
 # We can compare the results of the "plain" vectorizer and the content word vectorizer:
 
-# In[ ]:
+# In[9]:
 
 vdocs = [vectorizer.transform(d) for d in coll_docs]   # This actually parses the documents.
 
 
-# In[ ]:
+# In[10]:
 
 cw_docs = [cw_vectorizer.transform(d) for d in coll_docs]
 
 
-# In[ ]:
+# In[11]:
 
 d = vdocs[0]
 cw_d = cw_docs[0]
@@ -156,14 +156,14 @@ pprint.pprint({w: n for w, n in sorted(cw_d.items(), key=operator.itemgetter(1),
 # 
 # **To do operations on vector spaces, we use** `TransformCorpus` **objects as "pipeline sections" that operate on the flow of data.**
 
-# In[ ]:
+# In[12]:
 
 from npfl103.transform import TransformCorpus
 
 
 # These "pipeline" components get two parameters: the transformation they should be applying, and the source of the data to apply it on. Let's make an example transformation: normalizing the frequencies to 1.
 
-# In[ ]:
+# In[13]:
 
 # This is the transformation we want to apply.
 def normalize(vec):
@@ -179,7 +179,7 @@ normalized_docs = TransformCorpus(corpus=cw_docs, transform=normalize, name='nor
 
 # Let's do the same thing for queries:
 
-# In[ ]:
+# In[14]:
 
 cw_queries = (cw_vectorizer.transform(q) for q in coll_queries)   # Generator, again
 normalized_queries = TransformCorpus(corpus=cw_queries, transform=normalize, name='normalized_queries')
@@ -189,7 +189,7 @@ normalized_queries = TransformCorpus(corpus=cw_queries, transform=normalize, nam
 # 
 # It is maybe more elegant to implement vectorization also as a pipeline component instead of having lists or generators floating around.
 
-# In[ ]:
+# In[15]:
 
 cw_docs = TransformCorpus(corpus=coll_docs, transform=cw_vectorizer.transform, name='vectorized_docs')
 cw_queries = TransformCorpus(corpus=coll_queries, transform=cw_vectorizer.transform, name='vectorized_queries')
@@ -199,7 +199,7 @@ cw_queries = TransformCorpus(corpus=coll_queries, transform=cw_vectorizer.transf
 # 
 # The pipelines can, of course, build on top of each other. Using the previous pipeline stages `cw_docs` and `cw_queries` objects of `TransformCorpus` class as the `corpus` parameter, we can put the normalization on top of these:
 
-# In[ ]:
+# In[16]:
 
 normalized_docs = TransformCorpus(corpus=cw_docs, transform=normalize, name='normalized_docs')
 normalized_queries = TransformCorpus(corpus=cw_queries, transform=normalize, name='normalized_docs')
@@ -217,7 +217,7 @@ normalized_queries = TransformCorpus(corpus=cw_queries, transform=normalize, nam
 # 
 # The same transformation mechanism is used. This time, we transform a query from the same space as the documents into a *similarity space*: the dimensions of this space are the documents which should be retrieved, and the values are the similarity scores for the query and that given document.
 
-# In[ ]:
+# In[17]:
 
 from npfl103.similarity import Similarity
 
@@ -240,10 +240,10 @@ similarity_corpus = TransformCorpus(corpus=normalized_queries, transform=similar
 # 
 # In order to record the outputs, use the `Similarity.write_trec` static method:
 
-# In[ ]:
+# In[18]:
 
 import io   # The system io, not npfl103.io
-hdl = io.StringIO()  # Technical workaround, so that the tutorial does not create files.
+hdl = io.StringIO()  # Technical workaround, so that the tutorial does not create files at this point.
 
 # This is what writes the output. In practice, you'll probably use "with open(...) as hdl:" to write to a file.
 Similarity.write_trec(similarity_corpus, similarity, hdl)
@@ -251,6 +251,52 @@ Similarity.write_trec(similarity_corpus, similarity, hdl)
 
 # ## Evaluation
 # 
-# You should already have compiled `trec_eval` using the instructions in the `README` in `npfl103/eval`. Run `trec_eval -h` to find out how to call the evaluation script.
+# You should already have compiled `trec_eval` using the instructions in the `README` in `npfl103/eval`.
+# The `npfl103.evaluation` package provides a `do_eval()` and `print_eval()` function to run evaluation
+# from within the package.
 
-# # The End.
+# In[19]:
+
+from npfl103.evaluation import do_eval, print_eval
+
+
+# Since `trec_eval` (which is called inside these functions) needs an input file, not a stream,
+# we have to dump our results to a file.
+
+# In[20]:
+
+results_file = 'tutorial-assignment/tutorial-output.dat'
+with open(results_file, 'w') as outstream:
+    Similarity.write_trec(similarity_corpus, similarity, outstream)
+
+
+# The tutorial assignment has its ground truth file:
+
+# In[21]:
+
+qrels_file = 'tutorial-assignment/qrels.txt'
+print_eval(qrels_file, results_file)
+
+
+# You can also break down the results by query, by setting `results_by_query=True`:
+
+# In[22]:
+
+print_eval(qrels_file, results_file, results_by_query=True)
+
+
+# If you want to do further processing with the results, use `do_eval()`.
+# Instead of printing results, it returns them as a dictionary. Again, you can
+# request the results by query (it will come in an `OrderedDict` of `OrderedDict`s,
+# see `do_eval()` docstring).
+
+# In[25]:
+
+results = do_eval(qrels_file, results_file, results_by_query=True)
+pprint.pprint([q for q in results])
+pprint.pprint(results['10.2452/401-AH'])
+
+
+# 
+
+# # Happy hacking.

@@ -11769,7 +11769,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">npfl103</span>
@@ -11792,7 +11792,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -11821,7 +11821,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">npfl103.io</span> <span class="k">import</span> <span class="n">Collection</span>
@@ -11856,7 +11856,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">npfl103.io</span> <span class="k">import</span> <span class="n">Topic</span>
@@ -11890,7 +11890,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">npfl103.io</span> <span class="k">import</span> <span class="n">BinaryVectorizer</span><span class="p">,</span> <span class="n">TermFrequencyVectorizer</span>
@@ -11929,7 +11929,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TermFrequencyVectorizer</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="s1">&#39;lemma&#39;</span><span class="p">)</span>
@@ -11952,7 +11952,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vdocs</span> <span class="o">=</span> <span class="p">(</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">coll_docs</span><span class="p">)</span>
@@ -12004,7 +12004,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cw_vectorizer</span> <span class="o">=</span> <span class="n">TermFrequencyVectorizer</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="s1">&#39;lemma&#39;</span><span class="p">,</span> <span class="n">token_filter</span><span class="o">=</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">t</span><span class="o">.</span><span class="n">pos</span> <span class="ow">in</span> <span class="s1">&#39;NADV&#39;</span><span class="p">)</span>
@@ -12027,7 +12027,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vdocs</span> <span class="o">=</span> <span class="p">[</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">coll_docs</span><span class="p">]</span>   <span class="c1"># This actually parses the documents.</span>
@@ -12040,7 +12040,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cw_docs</span> <span class="o">=</span> <span class="p">[</span><span class="n">cw_vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">coll_docs</span><span class="p">]</span>
@@ -12053,7 +12053,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="n">vdocs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -12068,6 +12068,42 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>All words:
+{&#39;,&#39;: 40,
+ &#39;.&#39;: 18,
+ &#39;a&#39;: 10,
+ &#39;euro&#39;: 9,
+ &#39;evropský&#39;: 5,
+ &#39;měna&#39;: 5,
+ &#39;na&#39;: 7,
+ &#39;nový&#39;: 5,
+ &#39;se&#39;: 10,
+ &#39;v&#39;: 11}
+----------------------
+Content words:
+{&#39;0&#39;: 3,
+ &#39;být&#39;: 4,
+ &#39;euro&#39;: 9,
+ &#39;evropský&#39;: 5,
+ &#39;miliarda`1000000000&#39;: 3,
+ &#39;měna&#39;: 5,
+ &#39;nový&#39;: 5,
+ &#39;stát&#39;: 3,
+ &#39;země&#39;: 4,
+ &#39;člověk&#39;: 2}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12095,7 +12131,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">npfl103.transform</span> <span class="k">import</span> <span class="n">TransformCorpus</span>
@@ -12118,7 +12154,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This is the transformation we want to apply.</span>
@@ -12160,7 +12196,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cw_queries</span> <span class="o">=</span> <span class="p">(</span><span class="n">cw_vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">q</span><span class="p">)</span> <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">coll_queries</span><span class="p">)</span>   <span class="c1"># Generator, again</span>
@@ -12184,7 +12220,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cw_docs</span> <span class="o">=</span> <span class="n">TransformCorpus</span><span class="p">(</span><span class="n">corpus</span><span class="o">=</span><span class="n">coll_docs</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">cw_vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;vectorized_docs&#39;</span><span class="p">)</span>
@@ -12208,7 +12244,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">normalized_docs</span> <span class="o">=</span> <span class="n">TransformCorpus</span><span class="p">(</span><span class="n">corpus</span><span class="o">=</span><span class="n">cw_docs</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">normalize</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;normalized_docs&#39;</span><span class="p">)</span>
@@ -12247,7 +12283,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">npfl103.similarity</span> <span class="k">import</span> <span class="n">Similarity</span>
@@ -12290,11 +12326,11 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">io</span>   <span class="c1"># The system io, not npfl103.io</span>
-<span class="n">hdl</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">()</span>  <span class="c1"># Technical workaround, so that the tutorial does not create files.</span>
+<span class="n">hdl</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">()</span>  <span class="c1"># Technical workaround, so that the tutorial does not create files at this point.</span>
 
 <span class="c1"># This is what writes the output. In practice, you&#39;ll probably use &quot;with open(...) as hdl:&quot; to write to a file.</span>
 <span class="n">Similarity</span><span class="o">.</span><span class="n">write_trec</span><span class="p">(</span><span class="n">similarity_corpus</span><span class="p">,</span> <span class="n">similarity</span><span class="p">,</span> <span class="n">hdl</span><span class="p">)</span>
@@ -12310,7 +12346,315 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Evaluation">Evaluation<a class="anchor-link" href="#Evaluation">&#182;</a></h2><p>You should already have compiled <code>trec_eval</code> using the instructions in the <code>README</code> in <code>npfl103/eval</code>. Run <code>trec_eval -h</code> to find out how to call the evaluation script.</p>
+<h2 id="Evaluation">Evaluation<a class="anchor-link" href="#Evaluation">&#182;</a></h2><p>You should already have compiled <code>trec_eval</code> using the instructions in the <code>README</code> in <code>npfl103/eval</code>.
+The <code>npfl103.evaluation</code> package provides a <code>do_eval()</code> and <code>print_eval()</code> function to run evaluation
+from within the package.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">npfl103.evaluation</span> <span class="k">import</span> <span class="n">do_eval</span><span class="p">,</span> <span class="n">print_eval</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Since <code>trec_eval</code> (which is called inside these functions) needs an input file, not a stream,
+we have to dump our results to a file.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">results_file</span> <span class="o">=</span> <span class="s1">&#39;tutorial-assignment/tutorial-output.dat&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">results_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outstream</span><span class="p">:</span>
+    <span class="n">Similarity</span><span class="o">.</span><span class="n">write_trec</span><span class="p">(</span><span class="n">similarity_corpus</span><span class="p">,</span> <span class="n">similarity</span><span class="p">,</span> <span class="n">outstream</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The tutorial assignment has its ground truth file:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">qrels_file</span> <span class="o">=</span> <span class="s1">&#39;tutorial-assignment/qrels.txt&#39;</span>
+<span class="n">print_eval</span><span class="p">(</span><span class="n">qrels_file</span><span class="p">,</span> <span class="n">results_file</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>runid                 	all	default_run
+num_q                 	all	2
+num_ret               	all	20
+num_rel               	all	51
+num_rel_ret           	all	6
+map                   	all	0.1238
+gm_map                	all	0.1109
+Rprec                 	all	0.1739
+bpref                 	all	0.1405
+recip_rank            	all	1.0000
+iprec_at_recall_0.00  	all	1.0000
+iprec_at_recall_0.10  	all	0.3333
+iprec_at_recall_0.20  	all	0.1500
+iprec_at_recall_0.30  	all	0.0000
+iprec_at_recall_0.40  	all	0.0000
+iprec_at_recall_0.50  	all	0.0000
+iprec_at_recall_0.60  	all	0.0000
+iprec_at_recall_0.70  	all	0.0000
+iprec_at_recall_0.80  	all	0.0000
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.5000
+P_10                  	all	0.3000
+P_15                  	all	0.2000
+P_20                  	all	0.1500
+P_30                  	all	0.1000
+P_100                 	all	0.0300
+P_200                 	all	0.0150
+P_500                 	all	0.0060
+P_1000                	all	0.0030
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can also break down the results by query, by setting <code>results_by_query=True</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">print_eval</span><span class="p">(</span><span class="n">qrels_file</span><span class="p">,</span> <span class="n">results_file</span><span class="p">,</span> <span class="n">results_by_query</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>num_ret               	10.2452/401-AH	10
+num_rel               	10.2452/401-AH	11
+num_rel_ret           	10.2452/401-AH	3
+map                   	10.2452/401-AH	0.1788
+Rprec                 	10.2452/401-AH	0.2727
+bpref                 	10.2452/401-AH	0.2066
+recip_rank            	10.2452/401-AH	1.0000
+iprec_at_recall_0.00  	10.2452/401-AH	1.0000
+iprec_at_recall_0.10  	10.2452/401-AH	0.6667
+iprec_at_recall_0.20  	10.2452/401-AH	0.3000
+iprec_at_recall_0.30  	10.2452/401-AH	0.0000
+iprec_at_recall_0.40  	10.2452/401-AH	0.0000
+iprec_at_recall_0.50  	10.2452/401-AH	0.0000
+iprec_at_recall_0.60  	10.2452/401-AH	0.0000
+iprec_at_recall_0.70  	10.2452/401-AH	0.0000
+iprec_at_recall_0.80  	10.2452/401-AH	0.0000
+iprec_at_recall_0.90  	10.2452/401-AH	0.0000
+iprec_at_recall_1.00  	10.2452/401-AH	0.0000
+P_5                   	10.2452/401-AH	0.4000
+P_10                  	10.2452/401-AH	0.3000
+P_15                  	10.2452/401-AH	0.2000
+P_20                  	10.2452/401-AH	0.1500
+P_30                  	10.2452/401-AH	0.1000
+P_100                 	10.2452/401-AH	0.0300
+P_200                 	10.2452/401-AH	0.0150
+P_500                 	10.2452/401-AH	0.0060
+P_1000                	10.2452/401-AH	0.0030
+num_ret               	10.2452/402-AH	10
+num_rel               	10.2452/402-AH	40
+num_rel_ret           	10.2452/402-AH	3
+map                   	10.2452/402-AH	0.0688
+Rprec                 	10.2452/402-AH	0.0750
+bpref                 	10.2452/402-AH	0.0744
+recip_rank            	10.2452/402-AH	1.0000
+iprec_at_recall_0.00  	10.2452/402-AH	1.0000
+iprec_at_recall_0.10  	10.2452/402-AH	0.0000
+iprec_at_recall_0.20  	10.2452/402-AH	0.0000
+iprec_at_recall_0.30  	10.2452/402-AH	0.0000
+iprec_at_recall_0.40  	10.2452/402-AH	0.0000
+iprec_at_recall_0.50  	10.2452/402-AH	0.0000
+iprec_at_recall_0.60  	10.2452/402-AH	0.0000
+iprec_at_recall_0.70  	10.2452/402-AH	0.0000
+iprec_at_recall_0.80  	10.2452/402-AH	0.0000
+iprec_at_recall_0.90  	10.2452/402-AH	0.0000
+iprec_at_recall_1.00  	10.2452/402-AH	0.0000
+P_5                   	10.2452/402-AH	0.6000
+P_10                  	10.2452/402-AH	0.3000
+P_15                  	10.2452/402-AH	0.2000
+P_20                  	10.2452/402-AH	0.1500
+P_30                  	10.2452/402-AH	0.1000
+P_100                 	10.2452/402-AH	0.0300
+P_200                 	10.2452/402-AH	0.0150
+P_500                 	10.2452/402-AH	0.0060
+P_1000                	10.2452/402-AH	0.0030
+runid                 	all	default_run
+num_q                 	all	2
+num_ret               	all	20
+num_rel               	all	51
+num_rel_ret           	all	6
+map                   	all	0.1238
+gm_map                	all	0.1109
+Rprec                 	all	0.1739
+bpref                 	all	0.1405
+recip_rank            	all	1.0000
+iprec_at_recall_0.00  	all	1.0000
+iprec_at_recall_0.10  	all	0.3333
+iprec_at_recall_0.20  	all	0.1500
+iprec_at_recall_0.30  	all	0.0000
+iprec_at_recall_0.40  	all	0.0000
+iprec_at_recall_0.50  	all	0.0000
+iprec_at_recall_0.60  	all	0.0000
+iprec_at_recall_0.70  	all	0.0000
+iprec_at_recall_0.80  	all	0.0000
+iprec_at_recall_0.90  	all	0.0000
+iprec_at_recall_1.00  	all	0.0000
+P_5                   	all	0.5000
+P_10                  	all	0.3000
+P_15                  	all	0.2000
+P_20                  	all	0.1500
+P_30                  	all	0.1000
+P_100                 	all	0.0300
+P_200                 	all	0.0150
+P_500                 	all	0.0060
+P_1000                	all	0.0030
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you want to do further processing with the results, use <code>do_eval()</code>.
+Instead of printing results, it returns them as a dictionary. Again, you can
+request the results by query (it will come in an <code>OrderedDict</code> of <code>OrderedDict</code>s,
+see <code>do_eval()</code> docstring).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">do_eval</span><span class="p">(</span><span class="n">qrels_file</span><span class="p">,</span> <span class="n">results_file</span><span class="p">,</span> <span class="n">results_by_query</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">([</span><span class="n">q</span> <span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">results</span><span class="p">])</span>
+<span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;10.2452/401-AH&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;10.2452/401-AH&#39;, &#39;10.2452/402-AH&#39;, &#39;all&#39;]
+OrderedDict([(&#39;num_ret&#39;, &#39;10&#39;),
+             (&#39;num_rel&#39;, &#39;11&#39;),
+             (&#39;num_rel_ret&#39;, &#39;3&#39;),
+             (&#39;map&#39;, &#39;0.1788&#39;),
+             (&#39;Rprec&#39;, &#39;0.2727&#39;),
+             (&#39;bpref&#39;, &#39;0.2066&#39;),
+             (&#39;recip_rank&#39;, &#39;1.0000&#39;),
+             (&#39;iprec_at_recall_0.00&#39;, &#39;1.0000&#39;),
+             (&#39;iprec_at_recall_0.10&#39;, &#39;0.6667&#39;),
+             (&#39;iprec_at_recall_0.20&#39;, &#39;0.3000&#39;),
+             (&#39;iprec_at_recall_0.30&#39;, &#39;0.0000&#39;),
+             (&#39;iprec_at_recall_0.40&#39;, &#39;0.0000&#39;),
+             (&#39;iprec_at_recall_0.50&#39;, &#39;0.0000&#39;),
+             (&#39;iprec_at_recall_0.60&#39;, &#39;0.0000&#39;),
+             (&#39;iprec_at_recall_0.70&#39;, &#39;0.0000&#39;),
+             (&#39;iprec_at_recall_0.80&#39;, &#39;0.0000&#39;),
+             (&#39;iprec_at_recall_0.90&#39;, &#39;0.0000&#39;),
+             (&#39;iprec_at_recall_1.00&#39;, &#39;0.0000&#39;),
+             (&#39;P_5&#39;, &#39;0.4000&#39;),
+             (&#39;P_10&#39;, &#39;0.3000&#39;),
+             (&#39;P_15&#39;, &#39;0.2000&#39;),
+             (&#39;P_20&#39;, &#39;0.1500&#39;),
+             (&#39;P_30&#39;, &#39;0.1000&#39;),
+             (&#39;P_100&#39;, &#39;0.0300&#39;),
+             (&#39;P_200&#39;, &#39;0.0150&#39;),
+             (&#39;P_500&#39;, &#39;0.0060&#39;),
+             (&#39;P_1000&#39;, &#39;0.0030&#39;)])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
 </div>
@@ -12320,7 +12664,7 @@ We don't cover all of that here -- the tutorial focuses on how the library fits 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="The-End.">The End.<a class="anchor-link" href="#The-End.">&#182;</a></h1>
+<h1 id="Happy-hacking.">Happy hacking.<a class="anchor-link" href="#Happy-hacking.">&#182;</a></h1>
 </div>
 </div>
 </div>
