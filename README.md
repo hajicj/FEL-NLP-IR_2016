@@ -54,4 +54,6 @@ putting it into a repository of your own and making multiple copies, according
 to experimental configurations.) It's basically this tutorial in script form.
 Comments inside the file should help you get going.
 
+(Don't forget to set execute permissions for `search.py` & its derivatives...)
+
 Happy hacking!
