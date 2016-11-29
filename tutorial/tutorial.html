@@ -11751,16 +11751,22 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Information-Retrieval">Information Retrieval<a class="anchor-link" href="#Information-Retrieval">&#182;</a></h1><p>This is a tutorial for the <code>npfl103</code> package for Information Retrieval assignments.
-It will cover the following steps:</p>
+<h1 id="Information-Retrieval">Information Retrieval<a class="anchor-link" href="#Information-Retrieval">&#182;</a></h1><p>This is a tutorial for the <code>npfl103</code> package for Information Retrieval assignments.</p>
+<h2 id="Big-picture">Big picture<a class="anchor-link" href="#Big-picture">&#182;</a></h2><p>In simple IR systems that we'll build in this lab session, two major things are happening more or less independently on each other. One: the similarity index of documents to retrieve has to be built. Two: the queries are processed and documents get returned.</p>
+<p>The first part is all about representing the documents in your collection as points in a vector space.</p>
+<p>In the second part, you then convert the queries into the same vector space, and return the documents according to how close to the query point they are represented.</p>
+<p>Your job will be mostly to deal with designing a clever vector space, so that the closest documents to a query happen to be the right ones to retrieve.</p>
+<p>There are some pesky technicalities that have to be taken care of: reading the documents, writing the outputs, evaluating, etc. This package does its best to help you <em>not</em> to have to deal with these parts, but you kind of have to be aware of them, so the tutorial does go through how they are handled.</p>
+<h2 id="The-plan">The plan<a class="anchor-link" href="#The-plan">&#182;</a></h2><p>The tutorial goes through the following steps:</p>
 <ol>
 <li>Loading documents and queries (topics)</li>
-<li>Processing documents and queries into a vector space</li>
-<li>Transforming the document vectors from one space to another</li>
+<li>Processing documents and queries into a vector space (!!!)</li>
+<li>Transforming the document vectors from one space to another (!!!)</li>
 <li>Making queries</li>
 <li>Writing the outputs</li>
 <li>Evaluating</li>
 </ol>
+<p>Points 2 and 3 are where you're supposed to modify things and come up with ideas. The linguistic stuff (lemmatization/stemming, part-of-speech filtering, etc.) comes in step 2, the math (TF-IDF, pivot normalization, topic models...) come up in step 3.</p>
 <p>Note that the Python classes you're supposed to use have documentation inside, with quite detailed examples.
 We don't cover all of that here -- the tutorial focuses on how the library fits together.</p>
 

@@ -4,17 +4,35 @@
 # # Information Retrieval
 # 
 # This is a tutorial for the `npfl103` package for Information Retrieval assignments.
-# It will cover the following steps:
+# 
+# ## Big picture
+# 
+# In simple IR systems that we'll build in this lab session, two major things are happening more or less independently on each other. One: the similarity index of documents to retrieve has to be built. Two: the queries are processed and documents get returned.
+# 
+# The first part is all about representing the documents in your collection as points in a vector space.
+# 
+# In the second part, you then convert the queries into the same vector space, and return the documents according to how close to the query point they are represented.
+# 
+# Your job will be mostly to deal with designing a clever vector space, so that the closest documents to a query happen to be the right ones to retrieve.
+# 
+# There are some pesky technicalities that have to be taken care of: reading the documents, writing the outputs, evaluating, etc. This package does its best to help you *not* to have to deal with these parts, but you kind of have to be aware of them, so the tutorial does go through how they are handled.
+# 
+# ## The plan
+# 
+# The tutorial goes through the following steps:
 # 
 # 1. Loading documents and queries (topics)
-# 2. Processing documents and queries into a vector space
-# 3. Transforming the document vectors from one space to another
+# 2. Processing documents and queries into a vector space (!!!)
+# 3. Transforming the document vectors from one space to another (!!!)
 # 4. Making queries
 # 5. Writing the outputs
 # 6. Evaluating
 # 
+# Points 2 and 3 are where you're supposed to modify things and come up with ideas. The linguistic stuff (lemmatization/stemming, part-of-speech filtering, etc.) comes in step 2, the math (TF-IDF, pivot normalization, topic models...) come up in step 3.
+# 
 # Note that the Python classes you're supposed to use have documentation inside, with quite detailed examples.
 # We don't cover all of that here -- the tutorial focuses on how the library fits together.
+# 
 
 # In[1]:
 
